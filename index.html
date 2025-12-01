@@ -6,130 +6,278 @@
     <meta name="description" content="Frank Brockmann - PhD portfolio for UC Santa Cruz Computational Media program. Research on conversational AI as scaffolding for identity formation during life transitions.">
     <title>Frank Brockmann - Computational Media Portfolio</title>
     <link rel="icon" type="image/svg+xml" href="favicon.svg">
-    <link rel="stylesheet" href="style.css">
-</head>
-<body>
-    <a href="#main-content" class="skip-link">Skip to main content</a>
 
-    <nav class="site-nav" role="navigation" aria-label="Main navigation">
-        <div class="nav-container">
-            <a href="index.html" class="nav-home active">Frank Brockmann</a>
-            <div class="nav-links">
-                <a href="index.html#projects">Projects</a>
-                <a href="index.html#publications">Publications</a>
-                <a href="index.html#contact">Contact</a>
+    <!-- Fonts: Readex Pro & Source Code Pro -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Readex+Pro:wght@300;400;500;600;700&family=Source+Code+Pro:wght@400;500;600&display=swap" rel="stylesheet">
+
+    <!-- Tailwind CSS (CDN for static build) -->
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- Icons (Lucide) -->
+    <script src="https://unpkg.com/lucide@latest"></script>
+
+    <!-- CM Design Tokens Config -->
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              navy: {
+                50: '#EFF6FF',
+                800: '#005599',
+                900: '#003C6C', // Primary Brand
+                950: '#002A4D',
+              },
+              gold: {
+                400: '#FECB00', // Accent
+                500: '#EAB308',
+                700: '#A16207',
+              },
+              slate: {
+                50: '#F8FAFC',
+                100: '#F1F5F9',
+                200: '#E2E8F0',
+                500: '#64748B',
+                600: '#475569',
+                900: '#0F172A',
+              }
+            },
+            fontFamily: {
+              sans: ['"Readex Pro"', 'sans-serif'],
+              mono: ['"Source Code Pro"', 'monospace'],
+            },
+            letterSpacing: {
+              tight: '-0.025em',
+              widest: '0.1em',
+            }
+          }
+        }
+      }
+    </script>
+</head>
+<body class="bg-slate-50">
+    <a href="#main-content" class="sr-only focus:not-sr-only focus:absolute focus:top-0 focus:left-0 focus:z-50 focus:px-4 focus:py-2 focus:bg-navy-900 focus:text-white focus:font-mono focus:text-xs focus:uppercase">Skip to main content</a>
+
+    <!-- Navigation -->
+    <nav class="sticky top-0 z-40 bg-white border-b border-slate-200 shadow-sm" role="navigation" aria-label="Main navigation">
+        <div class="max-w-6xl px-5 py-4 mx-auto md:px-8">
+            <div class="flex items-center justify-between">
+                <a href="index.html" class="text-lg font-bold tracking-tight font-sans text-navy-900 hover:text-navy-800 transition-colors">
+                    Frank Brockmann
+                </a>
+                <div class="flex gap-6">
+                    <a href="#projects" class="text-xs font-bold uppercase transition-colors font-mono tracking-widest text-slate-500 hover:text-navy-900">Projects</a>
+                    <a href="#publications" class="text-xs font-bold uppercase transition-colors font-mono tracking-widest text-slate-500 hover:text-navy-900">Publications</a>
+                    <a href="#contact" class="text-xs font-bold uppercase transition-colors font-mono tracking-widest text-slate-500 hover:text-navy-900">Contact</a>
+                </div>
             </div>
         </div>
     </nav>
 
-    <header class="hero">
-        <h1>Frank Brockmann</h1>
-        <p class="tagline">Computational Media Researcher</p>
-        <p class="positioning">Investigating how conversational AI mediates identity formation, cultural sovereignty, and care infrastructure during critical life transitions</p>
+    <!-- Hero -->
+    <header class="py-16 bg-white border-b md:py-24 border-slate-200">
+        <div class="max-w-4xl px-5 mx-auto text-center md:px-8">
+            <div class="inline-block px-4 py-1 mb-6 border rounded-full border-gold-400 bg-gold-400/10">
+                <span class="text-xs font-bold uppercase font-mono tracking-widest text-navy-900">Computational Media Researcher</span>
+            </div>
+            <h1 class="mb-6 text-4xl font-bold tracking-tight md:text-6xl font-sans text-navy-900">Frank Brockmann</h1>
+            <p class="text-lg font-light leading-loose md:text-xl text-slate-600 font-sans">Investigating how conversational AI mediates identity formation, cultural sovereignty, and care infrastructure during critical life transitions</p>
+        </div>
     </header>
 
-    <main id="main-content">
-        <section class="research-focus">
-            <h2>Research Focus</h2>
-            <div class="focus-content">
-                <p class="lead">How do computational systems reshape human practices of care, learning, and identity formation? My work examines the <strong>algorithmic mediation of critical human experiences</strong>—from parents seeking crisis support to indigenous communities protecting linguistic sovereignty.</p>
+    <main id="main-content" class="max-w-6xl px-5 py-12 mx-auto md:px-8 md:py-16">
 
-                <div class="research-interests">
-                    <h3>Core Interests</h3>
-                    <ul>
-                        <li><strong>Conversational AI & Identity:</strong> How AI dialogue systems scaffold self-understanding during life transitions</li>
-                        <li><strong>Algorithmic Mediation of Care:</strong> What changes when support infrastructure becomes computational</li>
-                        <li><strong>Cultural Sovereignty in AI Systems:</strong> Designing AI that resists colonial patterns of knowledge extraction</li>
-                        <li><strong>Platform Affordances & Human Agency:</strong> How computational infrastructure shapes possible actions and experiences</li>
-                    </ul>
-                </div>
-            </div>
-        </section>
+        <!-- Research Focus -->
+        <section class="mb-16 md:mb-24">
+            <h2 class="mb-8 text-3xl font-bold tracking-tight md:text-4xl font-sans text-navy-900">Research Focus</h2>
 
-        <section id="projects" class="projects">
-            <h2>Portfolio Projects</h2>
+            <div class="overflow-hidden bg-white border shadow-sm rounded-xl border-slate-200">
+                <div class="h-1.5 bg-gold-400 w-full"></div>
+                <div class="p-6 md:p-10">
+                    <p class="mb-8 text-lg font-light leading-loose md:text-xl text-slate-600 font-sans">
+                        How do computational systems reshape human practices of care, learning, and identity formation? My work examines the <strong class="font-semibold text-navy-900">algorithmic mediation of critical human experiences</strong>—from parents seeking crisis support to indigenous communities protecting linguistic sovereignty.
+                    </p>
 
-            <div class="project-grid">
-                <article class="project-card">
-                    <div class="project-image-placeholder">
-                        <span>System Architecture</span>
-                    </div>
-                    <div class="project-content">
-                        <h3><a href="feast.html">Information Architecture as Care Infrastructure</a></h3>
-                        <p class="project-org">F.E.A.S.T. Technology Systems (2020-present)</p>
-                        <p class="project-description">How does computational mediation transform the experience of seeking help during acute family crisis? Research through designing CRM systems, dashboards, and automated communication for ~15,000 families annually navigating eating disorder treatment.</p>
-                        <div class="project-meta">
-                            <span class="tag">Platform Affordances</span>
-                            <span class="tag">Algorithmic Care</span>
-                            <span class="tag">Crisis Infrastructure</span>
+                    <div class="p-6 border rounded-lg bg-slate-50 border-slate-200 md:p-8">
+                        <h3 class="mb-5 text-xs font-bold uppercase font-mono tracking-widest text-slate-500">Core Interests</h3>
+                        <div class="space-y-4">
+                            <div class="flex gap-3">
+                                <i data-lucide="cpu" class="flex-shrink-0 w-5 h-5 mt-0.5 text-navy-900"></i>
+                                <p class="text-base font-light leading-loose font-sans text-slate-600">
+                                    <strong class="font-semibold text-navy-900">Conversational AI & Identity:</strong> How AI dialogue systems scaffold self-understanding during life transitions
+                                </p>
+                            </div>
+                            <div class="flex gap-3">
+                                <i data-lucide="heart-pulse" class="flex-shrink-0 w-5 h-5 mt-0.5 text-navy-900"></i>
+                                <p class="text-base font-light leading-loose font-sans text-slate-600">
+                                    <strong class="font-semibold text-navy-900">Algorithmic Mediation of Care:</strong> What changes when support infrastructure becomes computational
+                                </p>
+                            </div>
+                            <div class="flex gap-3">
+                                <i data-lucide="globe" class="flex-shrink-0 w-5 h-5 mt-0.5 text-navy-900"></i>
+                                <p class="text-base font-light leading-loose font-sans text-slate-600">
+                                    <strong class="font-semibold text-navy-900">Cultural Sovereignty in AI Systems:</strong> Designing AI that resists colonial patterns of knowledge extraction
+                                </p>
+                            </div>
+                            <div class="flex gap-3">
+                                <i data-lucide="network" class="flex-shrink-0 w-5 h-5 mt-0.5 text-navy-900"></i>
+                                <p class="text-base font-light leading-loose font-sans text-slate-600">
+                                    <strong class="font-semibold text-navy-900">Platform Affordances & Human Agency:</strong> How computational infrastructure shapes possible actions and experiences
+                                </p>
+                            </div>
                         </div>
-                        <a href="feast.html" class="project-link">View Project →</a>
                     </div>
-                </article>
+                </div>
+            </div>
+        </section>
 
-                <article class="project-card">
-                    <div class="project-image-placeholder">
-                        <span>AI Workflow Diagram</span>
-                    </div>
-                    <div class="project-content">
-                        <h3><a href="kaeo.html">Algorithmic Mediation of Linguistic Sovereignty</a></h3>
-                        <p class="project-org">KĀEO Hawaiian Language Assessment (2024-2025)</p>
-                        <p class="project-description">Can AI-augmented workflows serve indigenous language assessment while preserving cultural authority? Co-designed secure AI lab enabling cross-language psychometric analysis while protecting Hawaiian language integrity through multi-expert human oversight.</p>
-                        <div class="project-meta">
-                            <span class="tag">Data Sovereignty</span>
-                            <span class="tag">Human-AI Collaboration</span>
-                            <span class="tag">Algorithmic Colonialism</span>
+        <!-- Projects -->
+        <section id="projects" class="mb-16 md:mb-24">
+            <h2 class="mb-8 text-3xl font-bold tracking-tight md:text-4xl font-sans text-navy-900">Portfolio Projects</h2>
+
+            <div class="grid gap-8 md:gap-10">
+                <!-- F.E.A.S.T. Project Card -->
+                <article class="overflow-hidden transition-all duration-200 bg-white border shadow-sm hover:shadow-lg rounded-xl border-slate-200 group">
+                    <div class="h-1.5 bg-gold-400 w-full"></div>
+
+                    <div class="flex flex-col h-48 gap-2 p-6 md:h-56 bg-gradient-to-br from-navy-900 to-navy-800 md:p-8">
+                        <span class="text-xs font-bold uppercase font-mono tracking-widest text-gold-400">System Architecture</span>
+                        <div class="flex items-center justify-center flex-1">
+                            <i data-lucide="database" class="w-16 h-16 md:w-20 md:h-20 text-slate-200 opacity-40"></i>
                         </div>
-                        <a href="kaeo.html" class="project-link">View Project →</a>
+                    </div>
+
+                    <div class="p-6 border-b md:p-8 border-slate-100">
+                        <h3 class="mb-3 text-xl font-bold leading-snug tracking-tight md:text-2xl font-sans text-navy-900">
+                            <a href="feast.html" class="hover:text-navy-800 transition-colors">Information Architecture as Care Infrastructure</a>
+                        </h3>
+                        <p class="mb-3 text-xs font-bold uppercase font-mono tracking-widest text-slate-500">F.E.A.S.T. Technology Systems (2020-present)</p>
+                        <p class="mb-4 text-base font-light leading-loose md:text-lg text-slate-600 font-sans">
+                            How does computational mediation transform the experience of seeking help during acute family crisis? Research through designing CRM systems, dashboards, and automated communication for ~15,000 families annually navigating eating disorder treatment.
+                        </p>
+                        <div class="flex flex-wrap gap-2 mb-5">
+                            <span class="px-3 py-1 text-xs font-bold uppercase rounded-full font-mono tracking-wider bg-navy-900/5 text-navy-900">Platform Affordances</span>
+                            <span class="px-3 py-1 text-xs font-bold uppercase rounded-full font-mono tracking-wider bg-navy-900/5 text-navy-900">Algorithmic Care</span>
+                            <span class="px-3 py-1 text-xs font-bold uppercase rounded-full font-mono tracking-wider bg-navy-900/5 text-navy-900">Crisis Infrastructure</span>
+                        </div>
+                    </div>
+
+                    <div class="px-6 py-4 md:px-8 md:py-5 bg-slate-50">
+                        <a href="feast.html" class="inline-flex items-center text-xs font-bold uppercase transition-colors font-sans tracking-widest text-navy-900 hover:text-navy-800">
+                            View Project
+                            <i data-lucide="arrow-right" class="w-3.5 h-3.5 ml-2"></i>
+                        </a>
+                    </div>
+                </article>
+
+                <!-- KĀEO Project Card -->
+                <article class="overflow-hidden transition-all duration-200 bg-white border shadow-sm hover:shadow-lg rounded-xl border-slate-200 group">
+                    <div class="h-1.5 bg-gold-400 w-full"></div>
+
+                    <div class="flex flex-col h-48 gap-2 p-6 md:h-56 bg-gradient-to-br from-navy-900 to-navy-800 md:p-8">
+                        <span class="text-xs font-bold uppercase font-mono tracking-widest text-gold-400">AI Workflow Diagram</span>
+                        <div class="flex items-center justify-center flex-1">
+                            <i data-lucide="brain-circuit" class="w-16 h-16 md:w-20 md:h-20 text-slate-200 opacity-40"></i>
+                        </div>
+                    </div>
+
+                    <div class="p-6 border-b md:p-8 border-slate-100">
+                        <h3 class="mb-3 text-xl font-bold leading-snug tracking-tight md:text-2xl font-sans text-navy-900">
+                            <a href="kaeo.html" class="hover:text-navy-800 transition-colors">Algorithmic Mediation of Linguistic Sovereignty</a>
+                        </h3>
+                        <p class="mb-3 text-xs font-bold uppercase font-mono tracking-widest text-slate-500">KĀEO Hawaiian Language Assessment (2024-2025)</p>
+                        <p class="mb-4 text-base font-light leading-loose md:text-lg text-slate-600 font-sans">
+                            Can AI-augmented workflows serve indigenous language assessment while preserving cultural authority? Co-designed secure AI lab enabling cross-language psychometric analysis while protecting Hawaiian language integrity through multi-expert human oversight.
+                        </p>
+                        <div class="flex flex-wrap gap-2 mb-5">
+                            <span class="px-3 py-1 text-xs font-bold uppercase rounded-full font-mono tracking-wider bg-navy-900/5 text-navy-900">Data Sovereignty</span>
+                            <span class="px-3 py-1 text-xs font-bold uppercase rounded-full font-mono tracking-wider bg-navy-900/5 text-navy-900">Human-AI Collaboration</span>
+                            <span class="px-3 py-1 text-xs font-bold uppercase rounded-full font-mono tracking-wider bg-navy-900/5 text-navy-900">Algorithmic Colonialism</span>
+                        </div>
+                    </div>
+
+                    <div class="px-6 py-4 md:px-8 md:py-5 bg-slate-50">
+                        <a href="kaeo.html" class="inline-flex items-center text-xs font-bold uppercase transition-colors font-sans tracking-widest text-navy-900 hover:text-navy-800">
+                            View Project
+                            <i data-lucide="arrow-right" class="w-3.5 h-3.5 ml-2"></i>
+                        </a>
                     </div>
                 </article>
             </div>
         </section>
 
-        <section id="publications" class="publications">
-            <h2>Publications & Presentations</h2>
-            <div class="publication-list">
-                <article class="publication-item">
-                    <h3>Bridging Psychometric and Content Development Practices with AI: A Community-Based Workflow for Augmenting Hawaiian Language Assessments</h3>
-                    <p class="authors">Co-authored with Pōhai Kūkea-Shultz (KĀEO Director)</p>
-                    <p class="pub-status">Prepared for arXiv submission (November 2025)</p>
-                </article>
-            </div>
-        </section>
+        <!-- Publications -->
+        <section id="publications" class="mb-16 md:mb-24">
+            <h2 class="mb-8 text-3xl font-bold tracking-tight md:text-4xl font-sans text-navy-900">Publications & Presentations</h2>
 
-        <section id="background" class="background">
-            <h2>Background</h2>
-            <div class="background-content">
-                <div class="background-item">
-                    <h3>Education Goal</h3>
-                    <p><strong>PhD in Computational Media</strong><br>
-                    UC Santa Cruz, Fall 2026 Application</p>
-                </div>
-
-                <div class="background-item">
-                    <h3>Current Roles</h3>
-                    <p><strong>Director of Technology Services</strong>, F.E.A.S.T. (2020-present)<br>
-                    <strong>Assessment Consultant & AI Lab Co-Designer</strong>, KĀEO (2024-present)</p>
-                </div>
-
-                <div class="background-item">
-                    <h3>Research Approach</h3>
-                    <p>Practice-based research through designing real-world computational systems, then analyzing how those systems mediate human experience, agency, and cultural practices.</p>
+            <div class="overflow-hidden bg-white border shadow-sm rounded-xl border-slate-200">
+                <div class="p-6 border-b md:p-8 bg-slate-50 border-slate-100">
+                    <div class="flex items-start gap-3">
+                        <i data-lucide="file-text" class="flex-shrink-0 w-5 h-5 mt-1 text-navy-900"></i>
+                        <div>
+                            <h3 class="mb-2 text-lg font-bold leading-snug md:text-xl font-sans text-navy-900">
+                                Bridging Psychometric and Content Development Practices with AI: A Community-Based Workflow for Augmenting Hawaiian Language Assessments
+                            </h3>
+                            <p class="mb-1 text-sm font-light font-sans text-slate-600">Co-authored with Pōhai Kūkea-Shultz (KĀEO Director)</p>
+                            <p class="text-xs font-bold uppercase font-mono tracking-wider text-slate-500">Prepared for arXiv submission (November 2025)</p>
+                        </div>
+                    </div>
                 </div>
             </div>
         </section>
 
-        <section id="contact" class="contact">
-            <h2>Get In Touch</h2>
-            <p class="contact-info">
-                <strong>Email:</strong> frank [at] frankbydesign [dot] com<br>
-                <strong>Web:</strong> frankbydesign.com
-            </p>
+        <!-- Background -->
+        <section id="background" class="mb-16 md:mb-24">
+            <h2 class="mb-8 text-3xl font-bold tracking-tight md:text-4xl font-sans text-navy-900">Background</h2>
+
+            <div class="grid gap-6 md:grid-cols-3">
+                <div class="p-6 bg-white border shadow-sm rounded-xl border-slate-200 md:p-8">
+                    <h3 class="mb-3 text-xs font-bold uppercase font-mono tracking-widest text-slate-500">Education Goal</h3>
+                    <p class="text-base font-light leading-loose font-sans text-slate-600">
+                        <strong class="font-semibold text-navy-900">PhD in Computational Media</strong><br>
+                        UC Santa Cruz, Fall 2026 Application
+                    </p>
+                </div>
+
+                <div class="p-6 bg-white border shadow-sm rounded-xl border-slate-200 md:p-8">
+                    <h3 class="mb-3 text-xs font-bold uppercase font-mono tracking-widest text-slate-500">Current Roles</h3>
+                    <p class="text-base font-light leading-loose font-sans text-slate-600">
+                        <strong class="font-semibold text-navy-900">Director of Technology Services</strong>, F.E.A.S.T. (2020-present)<br>
+                        <strong class="font-semibold text-navy-900">Assessment Consultant & AI Lab Co-Designer</strong>, KĀEO (2024-present)
+                    </p>
+                </div>
+
+                <div class="p-6 bg-white border shadow-sm rounded-xl border-slate-200 md:p-8">
+                    <h3 class="mb-3 text-xs font-bold uppercase font-mono tracking-widest text-slate-500">Research Approach</h3>
+                    <p class="text-base font-light leading-loose font-sans text-slate-600">
+                        Practice-based research through designing real-world computational systems, then analyzing how those systems mediate human experience, agency, and cultural practices.
+                    </p>
+                </div>
+            </div>
         </section>
+
+        <!-- Contact -->
+        <section id="contact" class="py-12 text-center bg-white border shadow-sm md:py-16 rounded-xl border-slate-200">
+            <h2 class="mb-6 text-2xl font-bold tracking-tight md:text-3xl font-sans text-navy-900">Get In Touch</h2>
+            <div class="space-y-2 text-base font-light font-sans text-slate-600">
+                <p><strong class="font-semibold text-navy-900">Email:</strong> frank [at] frankbydesign [dot] com</p>
+                <p><strong class="font-semibold text-navy-900">Web:</strong> frankbydesign.com</p>
+            </div>
+        </section>
+
     </main>
 
-    <footer>
-        <p>&copy; 2025 Frank Brockmann | UC Santa Cruz Computational Media PhD Application (Fall 2026)</p>
+    <footer class="py-8 mt-16 text-center border-t md:mt-24 border-slate-200 bg-slate-50">
+        <p class="text-sm font-light font-sans text-slate-500">
+            &copy; 2025 Frank Brockmann | UC Santa Cruz Computational Media PhD Application (Fall 2026)
+        </p>
     </footer>
+
+    <!-- Initialize Lucide Icons -->
+    <script>
+        lucide.createIcons();
+    </script>
 </body>
 </html>

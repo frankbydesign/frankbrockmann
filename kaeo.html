@@ -57,28 +57,26 @@
       }
     </script>
 </head>
-<body class="bg-slate-50">
+<body class="bg-white">
     <a href="#main-content" class="sr-only focus:not-sr-only focus:absolute focus:top-0 focus:left-0 focus:z-50 focus:px-4 focus:py-2 focus:bg-navy-900 focus:text-white focus:font-mono focus:text-xs focus:uppercase">Skip to main content</a>
 
     <!-- Navigation -->
-    <nav class="sticky top-0 z-40 bg-white border-b border-slate-200 shadow-sm" role="navigation" aria-label="Main navigation">
-        <div class="max-w-6xl px-5 py-4 mx-auto md:px-8">
-            <div class="flex items-center justify-between">
-                <a href="index.html" class="text-lg font-bold tracking-tight font-sans text-navy-900 hover:text-navy-800 transition-colors">
-                    Frank Brockmann
-                </a>
-                <div class="flex gap-6">
-                    <a href="index.html#projects" class="text-xs font-bold uppercase transition-colors font-mono tracking-widest text-slate-500 hover:text-navy-900">Projects</a>
-                    <a href="index.html#publications" class="text-xs font-bold uppercase transition-colors font-mono tracking-widest text-slate-500 hover:text-navy-900">Publications</a>
-                    <a href="index.html#contact" class="text-xs font-bold uppercase transition-colors font-mono tracking-widest text-slate-500 hover:text-navy-900">Contact</a>
-                </div>
+    <nav class="sticky top-0 z-50 bg-white/80 backdrop-blur-md border-b border-slate-200" role="navigation" aria-label="Main navigation">
+        <div class="max-w-7xl mx-auto px-6 h-16 flex items-center justify-between">
+            <a href="index.html" class="font-sans font-bold text-navy-900 text-xl tracking-tight hover:text-navy-800 transition-colors">
+                Frank<span class="text-gold-500">.CM</span>
+            </a>
+            <div class="flex gap-6">
+                <a href="index.html#projects" class="text-xs font-bold uppercase transition-colors font-mono tracking-widest text-slate-500 hover:text-navy-900">Projects</a>
+                <a href="index.html#publications" class="text-xs font-bold uppercase transition-colors font-mono tracking-widest text-slate-500 hover:text-navy-900">Publications</a>
+                <a href="index.html#contact" class="text-xs font-bold uppercase transition-colors font-mono tracking-widest text-slate-500 hover:text-navy-900">Contact</a>
             </div>
         </div>
     </nav>
 
     <!-- Breadcrumb -->
     <div class="py-4 bg-white border-b border-slate-200">
-        <div class="max-w-3xl px-5 mx-auto md:px-8">
+        <div class="max-w-7xl px-6 mx-auto">
             <div class="flex items-center gap-2 text-sm font-mono">
                 <a href="index.html" class="text-navy-900 hover:text-navy-800 transition-colors">Portfolio</a>
                 <i data-lucide="chevron-right" class="w-4 h-4 text-slate-400"></i>
@@ -88,18 +86,16 @@
     </div>
 
     <!-- Header -->
-    <header class="py-12 bg-white border-b md:py-16 border-slate-200">
-        <div class="max-w-3xl px-5 mx-auto md:px-8">
-            <div class="inline-block px-3 py-1 mb-4 border rounded-full border-gold-400 bg-gold-400/10">
-                <span class="text-xs font-bold uppercase font-mono tracking-widest text-navy-900">KĀEO Hawaiian Language Assessment (2024-2025)</span>
-            </div>
-            <h1 class="mb-4 text-3xl font-bold tracking-tight md:text-5xl font-sans text-navy-900 leading-tight">
+    <section class="py-16 md:py-24 bg-slate-50 border-b border-slate-200">
+        <div class="max-w-4xl mx-auto px-6">
+            <span class="font-mono text-xs font-bold text-gold-700 uppercase tracking-widest mb-4 block">KĀEO Hawaiian Language Assessment (2024-2025)</span>
+            <h1 class="mb-4 text-3xl md:text-5xl font-bold tracking-tight font-sans text-navy-900 leading-tight">
                 Algorithmic Mediation of Linguistic Sovereignty
             </h1>
         </div>
-    </header>
+    </section>
 
-    <main id="main-content" class="max-w-3xl px-5 py-12 mx-auto md:px-8 md:py-16">
+    <main id="main-content" class="max-w-7xl px-6 py-20 mx-auto">
 
         <!-- Executive Summary -->
         <section class="mb-12 md:mb-16">
@@ -303,8 +299,8 @@
     </main>
 
     <!-- Footer Navigation -->
-    <div class="py-6 border-t bg-slate-50 border-slate-200">
-        <div class="max-w-3xl px-5 mx-auto md:px-8">
+    <div class="py-8 border-t bg-white border-slate-200">
+        <div class="max-w-7xl px-6 mx-auto">
             <a href="feast.html" class="inline-flex items-center text-xs font-bold uppercase transition-colors font-sans tracking-widest text-navy-900 hover:text-navy-800">
                 <i data-lucide="arrow-left" class="w-3.5 h-3.5 mr-2"></i>
                 Previous Project: F.E.A.S.T. Information Systems
@@ -312,10 +308,12 @@
         </div>
     </div>
 
-    <footer class="py-8 text-center border-t border-slate-200 bg-slate-50">
-        <p class="text-sm font-light font-sans text-slate-500">
-            &copy; 2025 Frank Brockmann | UC Santa Cruz Computational Media PhD Application (Fall 2026)
-        </p>
+    <footer class="py-12 border-t border-slate-200 bg-slate-50">
+        <div class="max-w-7xl mx-auto px-6 text-center">
+            <p class="text-sm font-light font-sans text-slate-500">
+                &copy; 2025 Frank Brockmann | UC Santa Cruz Computational Media PhD Application (Fall 2026)
+            </p>
+        </div>
     </footer>
 
     <!-- Initialize Lucide Icons -->

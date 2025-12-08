@@ -56,6 +56,45 @@
         }
       }
     </script>
+
+    <!-- Reusable Component Styles -->
+    <style>
+      /* Badge/Tag - visible pill-style labels */
+      .badge {
+        display: inline-block;
+        padding: 0.375rem 0.75rem;
+        font-size: 0.75rem;
+        font-weight: 600;
+        text-transform: uppercase;
+        letter-spacing: 0.05em;
+        border-radius: 9999px;
+        background-color: #EFF6FF;
+        color: #003C6C;
+        border: 1px solid #E2E8F0;
+      }
+      /* Callout - prominent message block */
+      .callout {
+        background-color: #F8FAFC;
+        border-left: 4px solid #FECB00;
+        padding: 1.5rem 2rem;
+        border-radius: 0 0.75rem 0.75rem 0;
+        margin: 2rem 0;
+      }
+      .callout p {
+        font-size: 1.125rem;
+        font-style: italic;
+        color: #003C6C;
+        margin: 0;
+        line-height: 1.75;
+      }
+      /* Research question styling */
+      .research-question {
+        font-style: italic;
+        font-size: 0.9375rem;
+        line-height: 1.75;
+        color: #475569;
+      }
+    </style>
 </head>
 <body class="bg-white">
     <a href="#main-content" class="sr-only focus:not-sr-only focus:absolute focus:top-0 focus:left-0 focus:z-50 focus:px-4 focus:py-2 focus:bg-navy-900 focus:text-white font-mono text-xs uppercase">Skip to main content</a>
@@ -92,41 +131,38 @@
             <h1 id="main-content" class="mb-6 text-3xl md:text-5xl font-bold tracking-tight font-sans text-navy-900 leading-tight">
                 Computational Infrastructure for Crisis Care
             </h1>
-            <p class="text-lg font-light font-sans text-slate-500 mb-8">Five years inside the systems that mediate support for 15,000 families annually</p>
             <div class="max-w-3xl space-y-6">
                 <p class="text-base font-light leading-loose font-sans text-slate-600">
-                    F.E.A.S.T. (Families Empowered and Supporting Treatment of Eating Disorders) provides support to caregivers navigating eating disorder treatment—a population in crisis, often isolated, making high-stakes decisions with limited information.
+                    F.E.A.S.T. supports 15,000+ families annually navigating eating disorder care and treatment—a population in crisis which is often making high-stakes decisions with limited information.
                 </p>
                 <p class="text-base font-light leading-loose font-sans text-slate-600">
-                    Since 2020, I've worked across multiple layers of this organization's computational infrastructure—not as an outside consultant, but as an embedded practitioner making real decisions with real consequences. I've managed communication systems, shaped how automated messages reach families in distress, and helped leadership think through what AI should and shouldn't do in a care context.
+                    Since 2020, I've worked inside this organization's computational infrastructure: shaping how automated messages reach families in distress, establishing what AI should and shouldn't do in a care context, and building tools that surface patterns leadership couldn't see.
                 </p>
-                <p class="text-base font-light leading-loose font-sans text-slate-600">
-                    This immersion surfaced questions I couldn't answer from inside the system: What happens when "helping someone" becomes a database operation? How should automated communication sound when the recipient is terrified about their child? Who decides what AI can do when vulnerable populations are involved? The artifacts below represent three interventions at different layers: language, governance, and decision support. Together, they trace a path from practitioner to researcher.
-                </p>
+                <div class="callout">
+                    <p>What happens when "helping someone" means optimizing a database operation or a back-end workflow?</p>
+                </div>
             </div>
         </div>
     </section>
 
     <!-- Artifact 1: Voice & Tone Guide -->
-    <section class="py-20 md:py-32 bg-white">
+    <section class="py-12 md:py-16 bg-white">
         <div class="max-w-7xl mx-auto px-6">
             <div class="max-w-4xl mx-auto">
                 <div class="bg-slate-50 border border-slate-200 rounded-xl p-8 md:p-10 shadow-sm">
                     <div class="flex items-start gap-4">
                         <i data-lucide="message-circle" class="flex-shrink-0 w-6 h-6 mt-1 text-navy-900"></i>
                         <div class="flex-1">
-                            <span class="font-mono text-xs font-bold text-gold-700 uppercase tracking-widest mb-2 block">Language & Communication</span>
+                            <span class="badge font-mono mb-4">Language & Communication</span>
                             <h2 class="mb-4 text-xl md:text-2xl font-bold tracking-tight font-sans text-navy-900">
                                 Voice & Tone Guide
                             </h2>
                             <p class="text-base font-light leading-loose font-sans text-slate-600 mb-6">
                                 When families contact F.E.A.S.T. in crisis, they encounter communications across multiple channels—email sequences, social media, website copy, support group facilitation. These touchpoints are often templated, scheduled, or produced at scale. I developed a voice and tone guide that establishes guardrails for how the organization speaks to people in distress. The constraints are specific: empathetic but not effusive, knowledgeable but not clinical, encouraging without false promises. Short sentences. Limited exclamation marks. Comfort and reassurance in every message. This isn't a style guide about fonts and colors. It's a set of design decisions about what care should sound like when it's mediated by templates, automation, and organizational scale.
                             </p>
-                            <div class="bg-white border-l-4 border-gold-400 p-4 rounded-r-lg">
-                                <p class="text-sm font-medium font-sans text-navy-900">
-                                    <span class="font-bold">Research question:</span> How do you systematize empathy? What gets preserved—and what gets lost—when compassionate communication must be reproducible across staff, volunteers, and channels?
-                                </p>
-                            </div>
+                            <p class="research-question">
+                                <strong>Research question:</strong> How do you systematize empathy? What gets preserved—and what gets lost—when compassionate communication must be reproducible across staff, volunteers, and channels?
+                            </p>
                         </div>
                     </div>
                 </div>
@@ -135,25 +171,23 @@
     </section>
 
     <!-- Artifact 2: AI Governance Policy -->
-    <section class="py-20 md:py-32 bg-slate-50">
+    <section class="py-12 md:py-16 bg-slate-50">
         <div class="max-w-7xl mx-auto px-6">
             <div class="max-w-4xl mx-auto">
                 <div class="bg-white border border-slate-200 rounded-xl p-8 md:p-10 shadow-sm">
                     <div class="flex items-start gap-4">
                         <i data-lucide="shield-check" class="flex-shrink-0 w-6 h-6 mt-1 text-navy-900"></i>
                         <div class="flex-1">
-                            <span class="font-mono text-xs font-bold text-gold-700 uppercase tracking-widest mb-2 block">Governance & Ethics</span>
+                            <span class="badge font-mono mb-4">Governance & Ethics</span>
                             <h2 class="mb-4 text-xl md:text-2xl font-bold tracking-tight font-sans text-navy-900">
                                 AI Governance Policy
                             </h2>
                             <p class="text-base font-light leading-loose font-sans text-slate-600 mb-6">
                                 As AI tools became accessible to small nonprofits, F.E.A.S.T. faced decisions most organizations were ignoring: Where should AI be used? Where should it be prohibited? Who decides? I drafted the organization's AI policy, now published on their website. The core position: AI may improve internal operations, but it will never mediate direct support. No chatbots. No automated crisis response. No situation where a caregiver might believe they're talking to a human when they're not. The policy also addresses data protection (no training on F.E.A.S.T. inputs), requires human oversight on all AI outputs, and names risks specific to this population: misinformation about eating disorders, bias in how bodies are discussed, tone failures in sensitive contexts, and erosion of trust in human connection.
                             </p>
-                            <div class="bg-slate-50 border-l-4 border-gold-400 p-4 rounded-r-lg mb-6">
-                                <p class="text-sm font-medium font-sans text-navy-900">
-                                    <span class="font-bold">Research question:</span> How do small organizations establish AI governance that protects vulnerable populations? What frameworks help non-technical leaders make these decisions?
-                                </p>
-                            </div>
+                            <p class="research-question mb-6">
+                                <strong>Research question:</strong> How do small organizations establish AI governance that protects vulnerable populations? What frameworks help non-technical leaders make these decisions?
+                            </p>
                             <a href="https://feast-ed.org/ai-policy/" target="_blank" rel="noopener noreferrer" class="inline-flex items-center text-sm font-bold text-navy-900 hover:text-navy-800 transition-colors">
                                 View Full Policy
                                 <i data-lucide="external-link" class="w-4 h-4 ml-2"></i>
@@ -166,25 +200,23 @@
     </section>
 
     <!-- Artifact 3: Donor Pattern Analyzer -->
-    <section class="py-20 md:py-32 bg-white">
+    <section class="py-12 md:py-16 bg-white">
         <div class="max-w-7xl mx-auto px-6">
             <div class="max-w-4xl mx-auto">
                 <div class="bg-slate-50 border border-slate-200 rounded-xl p-8 md:p-10 shadow-sm">
                     <div class="flex items-start gap-4">
                         <i data-lucide="bar-chart-3" class="flex-shrink-0 w-6 h-6 mt-1 text-navy-900"></i>
                         <div class="flex-1">
-                            <span class="font-mono text-xs font-bold text-gold-700 uppercase tracking-widest mb-2 block">Decision Support</span>
+                            <span class="badge font-mono mb-4">Decision Support</span>
                             <h2 class="mb-4 text-xl md:text-2xl font-bold tracking-tight font-sans text-navy-900">
                                 Donor Pattern Analyzer
                             </h2>
                             <p class="text-base font-light leading-loose font-sans text-slate-600 mb-6">
                                 Six years of donation data. 3,400+ donors. Patterns invisible in spreadsheets. I built an interactive analytics tool that surfaces concentration risk, retention trends, lapse predictions, and data quality flags—designed to scaffold executive decision-making about organizational sustainability. The tool contextualizes performance against sector benchmarks and economic conditions, helping leadership distinguish "is this us?" from "is this everyone?" This wasn't a consulting deliverable. It emerged from years of watching how leadership struggled to see patterns in their own data—and asking what kind of computational media might augment that capacity.
                             </p>
-                            <div class="bg-white border-l-4 border-gold-400 p-4 rounded-r-lg mb-6">
-                                <p class="text-sm font-medium font-sans text-navy-900">
-                                    <span class="font-bold">Research question:</span> How do different visual representations of risk change nonprofit leaders' prioritization decisions? What does it mean to design for augmented judgment rather than automated answers?
-                                </p>
-                            </div>
+                            <p class="research-question mb-6">
+                                <strong>Research question:</strong> How do different visual representations of risk change nonprofit leaders' prioritization decisions? What does it mean to design for augmented judgment rather than automated answers?
+                            </p>
                             <a href="https://frankbydesign.github.io/donation-pattern-analyzer/" target="_blank" rel="noopener noreferrer" class="inline-flex items-center text-sm font-bold text-navy-900 hover:text-navy-800 transition-colors">
                                 View Live Tool
                                 <i data-lucide="external-link" class="w-4 h-4 ml-2"></i>
@@ -197,7 +229,7 @@
     </section>
 
     <!-- Synthesis -->
-    <section class="py-20 md:py-32 bg-slate-50">
+    <section class="py-12 md:py-16 bg-slate-50">
         <div class="max-w-7xl mx-auto px-6">
             <h2 class="mb-8 text-2xl md:text-3xl font-bold tracking-tight font-sans text-navy-900">Synthesis</h2>
             <div class="max-w-3xl space-y-6">

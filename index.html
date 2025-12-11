@@ -43,143 +43,140 @@
 
     <!-- Navigation -->
     <nav class="sticky top-0 z-50 bg-white/80 backdrop-blur-md border-b border-slate-200" role="navigation" aria-label="Main navigation">
-        <div class="max-w-7xl mx-auto px-6 h-16 flex items-center justify-between">
-            <a href="index.html" class="font-sans font-bold text-navy-900 text-xl tracking-tight hover:text-navy-800 transition-colors">
-                Frank<span class="text-gold-500">.CM</span>
+        <div class="max-w-4xl mx-auto px-6 h-14 flex items-center justify-between">
+            <a href="index.html" class="font-sans font-semibold text-navy-900 text-lg tracking-tight hover:text-navy-800 transition-colors">
+                Frank Brockmann
             </a>
             <div class="flex gap-6">
-                <a href="#projects" class="text-xs font-bold uppercase transition-colors font-mono tracking-widest text-slate-500 hover:text-navy-900">Projects</a>
-                <a href="#publications" class="text-xs font-bold uppercase transition-colors font-mono tracking-widest text-slate-500 hover:text-navy-900">Publications</a>
-                <a href="#contact" class="text-xs font-bold uppercase transition-colors font-mono tracking-widest text-slate-500 hover:text-navy-900">Contact</a>
+                <a href="#projects" class="text-sm text-slate-600 hover:text-navy-900 transition-colors">Projects</a>
+                <a href="#publications" class="text-sm text-slate-600 hover:text-navy-900 transition-colors">Publications</a>
+                <a href="#education" class="text-sm text-slate-600 hover:text-navy-900 transition-colors">Education</a>
+                <a href="#contact" class="text-sm text-slate-600 hover:text-navy-900 transition-colors">Contact</a>
             </div>
         </div>
     </nav>
 
-    <!-- Hero Section - Navy Background -->
-    <section id="main-content" class="relative py-32 bg-navy-900 border-b border-navy-800 overflow-hidden">
-        <div class="max-w-5xl mx-auto px-6 relative z-10 text-center">
-            <span class="inline-block py-1 px-3 rounded-full bg-navy-800 border border-navy-700 font-mono text-xs font-bold text-gold-400 uppercase tracking-widest mb-6">
-                PhD Applicant 2026
-            </span>
-            <h1 class="font-sans font-bold text-5xl md:text-7xl text-white tracking-tight mb-8 leading-tight">
+    <!-- Intro Section -->
+    <section id="main-content" class="py-20 bg-white border-b border-slate-100">
+        <div class="max-w-3xl mx-auto px-6">
+            <h1 class="font-sans font-bold text-4xl text-navy-900 tracking-tight mb-2">
                 Frank Brockmann
             </h1>
-            <p class="font-sans font-light text-xl md:text-2xl text-navy-50 leading-relaxed max-w-3xl mx-auto">
-                Investigating the <span class="text-gold-400 font-medium">algorithmic mediation</span> of identity, sovereignty, and care during critical life transitions.
-            </p>
-            <div class="mt-10 flex flex-col sm:flex-row justify-center gap-4">
-                <a href="#projects" class="inline-flex items-center justify-center h-12 px-8 py-2 text-xs font-bold uppercase transition-all duration-200 rounded-lg text-navy-900 bg-gold-400 hover:bg-gold-300 focus:outline-none focus:ring-2 focus:ring-offset-2 active:scale-[0.98] tracking-widest font-sans shadow-md hover:shadow-lg">
-                    View Portfolio
-                </a>
-                <a href="#contact" class="inline-flex items-center justify-center h-12 px-8 py-2 text-xs font-bold uppercase transition-all duration-200 rounded-lg text-white bg-transparent border-2 border-navy-700 hover:border-gold-400 hover:text-gold-400 focus:outline-none focus:ring-2 focus:ring-offset-2 active:scale-[0.98] tracking-widest font-sans">
-                    Contact Me
-                </a>
+            <p class="text-lg text-slate-500 mb-8">PhD Applicant, Computational Media (Fall 2026)</p>
+
+            <div class="space-y-4 text-lg text-slate-600 leading-relaxed">
+                <p>
+                    I've spent 25 years building technology systems for organizations doing hard, human work—supporting families through eating disorder treatment, helping indigenous communities maintain linguistic sovereignty, improving educational assessment for under-resourced schools.
+                </p>
+                <p>
+                    Now I'm turning that experience toward a research question: how do computational systems shape the people who use them? Not just whether the tools work, but how they change the way we think, decide, and understand ourselves.
+                </p>
             </div>
         </div>
     </section>
 
-    <!-- Research Agenda Section - White Background -->
-    <section class="py-24 bg-white">
+    <!-- Projects Section -->
+    <section id="projects" class="py-16 bg-slate-50 border-b border-slate-100">
         <div class="max-w-3xl mx-auto px-6">
-            <h2 class="font-sans font-bold text-3xl text-navy-900 mb-8 tracking-tight">Research Agenda</h2>
-            <p class="font-sans font-light text-lg text-slate-600 leading-loose mb-8">
-                How do computational systems reshape human practices of care, learning, and identity formation? My work investigates the <strong class="font-semibold text-navy-900">algorithmic mediation of critical human experiences</strong>—from parents seeking crisis support to indigenous communities protecting linguistic sovereignty.
-            </p>
-            <p class="font-sans font-light text-lg text-slate-600 leading-loose">
-                I approach these questions through <strong class="font-semibold text-navy-900">practice-based research</strong>: designing real-world computational systems, then analyzing how those systems mediate human experience, agency, and cultural practices.
-            </p>
-        </div>
-    </section>
+            <h2 class="font-sans font-semibold text-2xl text-navy-900 tracking-tight mb-8">Projects</h2>
 
-    <!-- Portfolio Grid Section - Slate Background -->
-    <section id="projects" class="py-24 bg-slate-50 border-t border-slate-200">
-        <div class="max-w-7xl mx-auto px-6">
-            <div class="text-center max-w-3xl mx-auto mb-12">
-                <h2 class="font-sans font-bold text-3xl text-navy-900 tracking-tight">Projects</h2>
-            </div>
-
-            <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+            <div class="space-y-6">
                 <!-- F.E.A.S.T. Card -->
-                <a href="feast.html" class="group h-full flex flex-col bg-white rounded-lg p-6 hover:bg-slate-50 transition-colors duration-200">
-                    <div class="flex-grow">
-                        <h3 class="text-lg font-medium tracking-tight font-sans text-navy-900 mb-2">
-                            F.E.A.S.T.
-                        </h3>
-                        <p class="text-base font-light leading-relaxed text-slate-600 font-sans">
-                            Technology infrastructure for a caregiver support organization serving 15,000+ families annually. Voice guidelines, AI governance, donor analytics.
-                        </p>
-                    </div>
-                    <div class="mt-4">
-                        <span class="text-sm text-slate-500 group-hover:text-navy-900 flex items-center transition-colors">
-                            View Project <i data-lucide="arrow-right" class="ml-1.5 w-4 h-4"></i>
-                        </span>
-                    </div>
-                </a>
+                <div class="bg-white rounded-lg p-6 border border-slate-200">
+                    <h3 class="text-lg font-medium text-navy-900 mb-1">F.E.A.S.T.</h3>
+                    <p class="text-sm text-slate-500 mb-3">Technology infrastructure for crisis support</p>
+                    <p class="text-slate-600 mb-4">Voice guidelines, AI governance, and donor analytics for an organization serving 15,000 families annually.</p>
+                    <a href="feast.html" class="text-sm text-navy-800 hover:text-navy-900 flex items-center">
+                        View Project <i data-lucide="arrow-right" class="ml-1.5 w-4 h-4"></i>
+                    </a>
+                </div>
 
                 <!-- KĀʻEO Card -->
-                <a href="kaeo.html" class="group h-full flex flex-col bg-white rounded-lg p-6 hover:bg-slate-50 transition-colors duration-200">
-                    <div class="flex-grow">
-                        <h3 class="text-lg font-medium tracking-tight font-sans text-navy-900 mb-2">
-                            KĀʻEO
-                        </h3>
-                        <p class="text-base font-light leading-relaxed text-slate-600 font-sans">
-                            AI tool for Hawaiian language assessment. Workflows designed to preserve indigenous authority over protected cultural content.
-                        </p>
-                    </div>
-                    <div class="mt-4">
-                        <span class="text-sm text-slate-500 group-hover:text-navy-900 flex items-center transition-colors">
-                            View Project <i data-lucide="arrow-right" class="ml-1.5 w-4 h-4"></i>
-                        </span>
-                    </div>
-                </a>
-            </div>
-        </div>
-    </section>
-
-    <!-- Publications Section - White Background -->
-    <section id="publications" class="py-24 bg-white border-t border-slate-200">
-        <div class="max-w-7xl mx-auto px-6">
-            <h2 class="mb-12 text-3xl font-bold tracking-tight text-center font-sans text-navy-900">Publications & Presentations</h2>
-
-            <div class="max-w-4xl mx-auto">
-                <div class="bg-white border border-slate-200 rounded-xl overflow-hidden hover:shadow-lg transition-shadow duration-300">
-                    <div class="h-1.5 bg-gold-400 w-full"></div>
-                    <div class="p-8 md:p-10">
-                        <div class="flex items-start gap-4">
-                            <i data-lucide="file-text" class="flex-shrink-0 w-6 h-6 mt-1 text-navy-900"></i>
-                            <div class="max-w-3xl">
-                                <h3 class="mb-3 text-lg font-bold leading-snug font-sans text-navy-900">
-                                    Bridging Psychometric and Content Development Practices with AI: A Community-Based Workflow for Augmenting Hawaiian Language Assessments
-                                </h3>
-                                <p class="mb-2 text-base font-light font-sans text-slate-600">Co-authored with Pōhai Kūkea-Shultz (KĀEO Director)</p>
-                                <p class="text-xs font-bold uppercase font-mono tracking-wider text-slate-500">Prepared for arXiv submission (November 2025)</p>
-                            </div>
-                        </div>
-                    </div>
+                <div class="bg-white rounded-lg p-6 border border-slate-200">
+                    <h3 class="text-lg font-medium text-navy-900 mb-1">KĀʻEO</h3>
+                    <p class="text-sm text-slate-500 mb-3">AI tools for Hawaiian language assessment</p>
+                    <p class="text-slate-600 mb-4">Workflows designed to preserve indigenous authority over protected cultural content.</p>
+                    <a href="kaeo.html" class="text-sm text-navy-800 hover:text-navy-900 flex items-center">
+                        View Project <i data-lucide="arrow-right" class="ml-1.5 w-4 h-4"></i>
+                    </a>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Contact Section - Slate Background -->
-    <section id="contact" class="py-24 bg-slate-50 border-t border-slate-200">
-        <div class="max-w-3xl mx-auto px-6 text-center">
-            <h2 class="mb-8 text-3xl font-bold tracking-tight font-sans text-navy-900">Get In Touch</h2>
-            <div class="space-y-3 text-lg font-light font-sans text-slate-600 mb-8">
-                <p><strong class="font-semibold text-navy-900">Email:</strong> frank [at] frankbydesign [dot] com</p>
-                <p><strong class="font-semibold text-navy-900">Web:</strong> frankbydesign.com</p>
+    <!-- Publications Section -->
+    <section id="publications" class="py-16 bg-white border-b border-slate-100">
+        <div class="max-w-3xl mx-auto px-6">
+            <h2 class="font-sans font-semibold text-2xl text-navy-900 tracking-tight mb-8">Publications</h2>
+
+            <!-- In Progress -->
+            <div class="mb-10">
+                <h3 class="text-sm font-semibold text-slate-500 uppercase tracking-wide mb-4">In Progress</h3>
+                <ul class="space-y-4 text-slate-600">
+                    <li>
+                        Brockmann, F. & Kūkea-Shultz, P. (2025). <em>Bridging Psychometric and Content Development Practices with AI: A Community-Based Workflow for Augmenting Hawaiian Language Assessments.</em> Prepared for arXiv, December 2025.
+                    </li>
+                    <li>
+                        Brockmann, F. <em>Formative AI Scaffolding: How Conversational AI Shapes Adult Identity During Life Transitions.</em> In preparation.
+                    </li>
+                    <li>
+                        Brockmann, F. <em>Ethics-First AI Adoption: A Framework for Mission-Driven Organizations.</em> In preparation.
+                    </li>
+                </ul>
             </div>
-            <a href="mailto:frank@frankbydesign.com" class="inline-flex items-center justify-center h-12 px-8 py-2 text-xs font-bold uppercase transition-all duration-200 rounded-lg text-navy-900 bg-gold-400 hover:bg-gold-300 focus:outline-none focus:ring-2 focus:ring-offset-2 active:scale-[0.98] tracking-widest font-sans shadow-md hover:shadow-lg">
-                Send Message
-            </a>
+
+            <!-- Educational Measurement -->
+            <div class="mb-8">
+                <h3 class="text-sm font-semibold text-slate-500 uppercase tracking-wide mb-4">Educational Measurement</h3>
+                <ul class="space-y-4 text-slate-600">
+                    <li>
+                        Auty, B. & Brockmann, F. (2012). <em>Growth Model Comparison Study: A Summary of Results.</em> Council of Chief State School Officers.
+                    </li>
+                    <li>
+                        Brockmann, F. (2011). <em>Commonly unrecognized error variance in statewide assessment programs.</em> Council of Chief State School Officers.
+                    </li>
+                    <li>
+                        Brockmann, F. & Ryan, J. (2009). <em>A practitioner's introduction to equating with primers on classical test theory and item response theory.</em> Council of Chief State School Officers.
+                    </li>
+                </ul>
+            </div>
+
+            <p class="text-sm text-slate-500">
+                <a href="https://orcid.org/0009-0001-4544-7522" class="hover:text-navy-900 transition-colors" target="_blank" rel="noopener">
+                    ORCID: 0009-0001-4544-7522
+                </a>
+            </p>
+        </div>
+    </section>
+
+    <!-- Education Section -->
+    <section id="education" class="py-16 bg-slate-50 border-b border-slate-100">
+        <div class="max-w-3xl mx-auto px-6">
+            <h2 class="font-sans font-semibold text-2xl text-navy-900 tracking-tight mb-8">Education</h2>
+            <ul class="space-y-3 text-slate-600">
+                <li><strong class="text-navy-900">M.B.A., General Business Administration</strong> — University of Phoenix, 2001</li>
+                <li><strong class="text-navy-900">B.A., Literature/Creative Writing</strong> — University of California, Santa Cruz, 1993</li>
+                <li><strong class="text-navy-900">CS50: Introduction to AI with Python</strong> — in progress</li>
+            </ul>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="py-16 bg-white">
+        <div class="max-w-3xl mx-auto px-6">
+            <h2 class="font-sans font-semibold text-2xl text-navy-900 tracking-tight mb-6">Contact</h2>
+            <div class="space-y-2 text-slate-600">
+                <p><strong class="text-navy-900">Email:</strong> frank [at] frankbydesign [dot] com</p>
+                <p><strong class="text-navy-900">Web:</strong> frankbydesign.com</p>
+            </div>
         </div>
     </section>
 
     <!-- Footer -->
-    <footer class="py-12 border-t border-slate-200 bg-white">
-        <div class="max-w-7xl mx-auto px-6 text-center">
-            <p class="text-sm font-light font-sans text-slate-500">
-                &copy; 2025 Frank Brockmann | UC Santa Cruz Computational Media PhD Application (Fall 2026)
+    <footer class="py-8 border-t border-slate-100 bg-white">
+        <div class="max-w-3xl mx-auto px-6">
+            <p class="text-sm text-slate-400">
+                &copy; 2025 Frank Brockmann
             </p>
         </div>
     </footer>

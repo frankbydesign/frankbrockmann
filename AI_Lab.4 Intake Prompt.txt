@@ -1,0 +1,50 @@
+Use the AI Lab Frameworks to conduct a comprehensive analysis for this item:
+
+1. 
+Item Identification: 
+63 (H4_item 63 - HS20063.pdf)
+Passage: 9 Papa Mau
+
+Content Area and Level: 
+Hawaiian Language Arts Grade 3
+
+2. 
+Psychometric & Performance Data:
+
+Reference current and historic p-values and item-rest correlations as flagged in 
+H4_2025_Item Data Review Sheet.pdf
+
+Response frequency for each distractor, if available: 
+If applicable, reference “Response distribution” op1 op2 op3 op4 op5 in
+H4_2025_Item Data Review Sheet.pdf
+
+DIF Analysis Results (Gender, FRL) if flagged:
+Reference current DIF analysis as flagged in 
+H4_2025_Item Data Review Sheet.pdf
+
+Lead Psychometrician notes and historical qualitative feedback:
+For notes related to the item identified in 1. Above, refer to
+“_issues_H4.pdf”
+AND
+Refer to the "Seneca" and "Seneca/UH" notes column in 
+H4_2025_Item Data Review Sheet.pdf
+
+3. 
+Item Content & Metadata:
+
+For item metadata, refer to: 
+H4_item 63 - HS20063.pdf
+
+to get:
+• full item content in Hawaiian - use item under “reviewer’s version” if more than one item is found (items with strikethru text are OLD versions)
+• Item Type (e.g., SC, DD)
+• Assigned SLO (Student Learning Objective) 
+• SLO text (refer to _SLOs_only file)
+• Assigned DOK
+• Assigned Claim
+• Assigned Target
+• Correct Answer Key
+• Any other relevant metadata
+
+4. 
+Replacement items, if any: 1290 was EFTd to replace 63.

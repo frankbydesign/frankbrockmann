@@ -3,8 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="KĀʻEO Project: AI Tools and Computational Systems Infrastructure to Support Hawaiian Language Assessment and Revitalization.">
-    <title>KĀʻEO Project - Frank Brockmann</title>
+    <meta name="description" content="KĀʻEO: AI Tools and Computational Systems Infrastructure to Support Hawaiian Language Assessment and Revitalization.">
+    <title>KĀʻEO - Frank Brockmann</title>
     <link rel="icon" type="image/svg+xml" href="favicon.svg">
 
     <!-- Fonts: Readex Pro & Source Code Pro -->
@@ -24,77 +24,21 @@
         theme: {
           extend: {
             colors: {
-              navy: {
-                50: '#EFF6FF',
-                800: '#005599',
-                900: '#003C6C',
-                950: '#002A4D',
-              },
-              gold: {
-                400: '#FECB00',
-                500: '#F1B521',
-                700: '#A16207',
-              },
-              slate: {
-                50: '#F8FAFC',
-                100: '#F1F5F9',
-                200: '#E2E8F0',
-                500: '#64748B',
-                600: '#475569',
-                900: '#0F172A',
-              }
+              navy: { 50: '#EFF6FF', 800: '#005599', 900: '#003C6C', 950: '#002A4D' },
+              gold: { 400: '#FECB00', 500: '#F1B521', 600: '#EAB308', 700: '#A16207' },
+              slate: { 50: '#F8FAFC', 100: '#F1F5F9', 200: '#E2E8F0', 500: '#64748B', 600: '#475569', 900: '#0F172A' }
             },
             fontFamily: {
               sans: ['"Readex Pro"', 'sans-serif'],
               mono: ['"Source Code Pro"', 'monospace'],
             },
-            letterSpacing: {
-              tight: '-0.025em',
-              widest: '0.1em',
-            }
+            letterSpacing: { tight: '-0.025em', widest: '0.1em' }
           }
         }
       }
     </script>
-
-    <!-- Reusable Component Styles -->
-    <style>
-      /* Badge/Tag - subtle pill-style labels */
-      .badge {
-        display: inline-block;
-        padding: 0.25rem 0.625rem;
-        font-size: 0.6875rem;
-        font-weight: 500;
-        letter-spacing: 0.02em;
-        border-radius: 9999px;
-        background-color: #F1F5F9;
-        color: #475569;
-      }
-      /* Callout - prominent message block */
-      .callout {
-        background-color: #F8FAFC;
-        border-left: 4px solid #F1B521;
-        padding: 1.5rem 2rem;
-        border-radius: 0 0.75rem 0.75rem 0;
-        margin: 2rem 0;
-      }
-      .callout p {
-        font-size: 1.125rem;
-        font-style: italic;
-        color: #003C6C;
-        margin: 0;
-        line-height: 1.75;
-      }
-      /* Research question styling */
-      .research-question {
-        font-style: italic;
-        font-size: 0.9375rem;
-        line-height: 1.75;
-        color: #475569;
-      }
-    </style>
 </head>
-<body class="bg-white">
+<body class="bg-white text-[17px]">
     <a href="#main-content" class="sr-only focus:not-sr-only focus:absolute focus:top-0 focus:left-0 focus:z-50 focus:px-4 focus:py-2 focus:bg-navy-900 focus:text-white font-mono text-xs uppercase">Skip to main content</a>
 
     <!-- Navigation -->
@@ -104,7 +48,7 @@
                 Frank Brockmann
             </a>
             <div class="flex gap-6">
-                <a href="index.html#projects" class="text-sm text-slate-200 hover:text-gold-500 transition-colors">Projects</a>
+                <a href="index.html#projects" class="text-sm text-slate-200 hover:text-gold-500 transition-colors">Portfolio Projects</a>
                 <a href="index.html#publications" class="text-sm text-slate-200 hover:text-gold-500 transition-colors">Publications & Presentations</a>
                 <a href="index.html#education" class="text-sm text-slate-200 hover:text-gold-500 transition-colors">Education</a>
                 <a href="index.html#contact" class="text-sm text-slate-200 hover:text-gold-500 transition-colors">Contact</a>
@@ -114,122 +58,143 @@
 
     <!-- Breadcrumb -->
     <div class="py-4 bg-white border-b border-slate-100">
-        <div class="max-w-3xl mx-auto px-6">
+        <div class="max-w-4xl mx-auto px-6">
             <div class="flex items-center gap-2 text-sm font-mono">
                 <a href="index.html" class="text-navy-900 hover:text-navy-800 transition-colors">Portfolio</a>
                 <i data-lucide="chevron-right" class="w-4 h-4 text-slate-400"></i>
-                <span class="text-slate-500">KĀʻEO Project</span>
+                <span class="text-slate-500">KĀʻEO</span>
             </div>
         </div>
     </div>
 
-    <!-- Header -->
-    <section class="py-16 md:py-24 bg-[#E8E8E8] border-b border-slate-100">
-        <div class="max-w-3xl mx-auto px-6">
-            <span class="font-mono text-xs font-bold text-gold-700 uppercase tracking-widest mb-4 block">KĀʻEO · Assessment Consultant & AI Lab Co-Designer · 2016–present</span>
-            <h1 id="main-content" class="mb-6 text-3xl md:text-5xl font-bold tracking-tight font-sans text-navy-900 leading-tight">
-                AI Tools and Computational Systems Infrastructure to Support Hawaiian Language Assessment and Revitalization
-            </h1>
-            <div class="space-y-6">
-                <p class="text-base font-light leading-loose font-sans text-slate-600">
-                    KĀʻEO is the only Hawaiian-medium assessment system in the world—and the only native language assessment used for federal accountability in the United States. Since 2016, I've worked with the program as an assessment consultant. In 2024, I co-designed an AI workflow that solved a problem nobody else had cracked.
-                </p>
-                <p class="text-base font-light leading-loose font-sans text-slate-600">
-                    Psychometricians analyzing test performance don't speak Hawaiian. Hawaiian language educators aren't trained in psychometrics. When a test item performs poorly, figuring out why requires both perspectives—but they couldn't easily work together. Geography, language barriers, and the need to protect Hawaiian content created bottlenecks that slowed everything down.
-                </p>
-                <div class="callout">
-                    <p>Hawaiian language data has been extracted and exploited before. We designed the system so nothing leaves the room without cultural review. AI as augmentation, not automation—humans are the loop, not just in it.</p>
+    <!-- Header Section -->
+    <section id="main-content" class="py-12 bg-[#E8E8E8] border-b border-slate-100">
+        <div class="max-w-4xl mx-auto px-6">
+            <div class="flex items-start gap-6 mb-6">
+                <img src="logo_kaeo.webp" alt="KĀʻEO Logo" class="w-20 h-20 object-contain flex-shrink-0">
+                <div>
+                    <h1 class="font-sans font-bold text-4xl text-navy-900 tracking-tight mb-2">KĀʻEO</h1>
+                    <p class="text-lg text-slate-600 mb-1">AI Tools and Computational Systems Infrastructure to Support Hawaiian Language Assessment and Revitalization</p>
+                    <p class="text-sm text-slate-500">Assessment Consultant & AI Lab Co-Designer · 2016–Present</p>
                 </div>
             </div>
+
+            <p class="text-sm italic text-slate-500 mb-6">This page is under construction. More artifacts coming soon.</p>
+
+            <p class="text-lg text-slate-600 leading-relaxed">
+                KĀʻEO is the only Hawaiian-medium assessment system in the world, serving approximately 3,000 students in Hawaiʻi's immersion schools. Since 2016, I've worked with the program on assessment development and psychometric analysis. In 2025, I co-designed an AI Lab that bridged psychometric analysis and Hawaiian cultural and language expertise, while keeping Hawaiian content under community control.
+            </p>
         </div>
     </section>
 
-    <!-- Artifacts Container -->
-    <section class="py-8 md:py-12 bg-white">
-        <div class="max-w-3xl mx-auto px-6">
-                <!-- Artifact 1: AI-Assisted Item Analysis Lab -->
-                <article class="py-8 border-t border-slate-100">
-                    <span class="badge font-mono mb-3 inline-block">AI Workflow Design</span>
-                    <h2 class="mb-3 text-lg md:text-xl font-semibold tracking-tight font-sans text-navy-900">
-                        AI-Assisted Item Analysis Lab
-                    </h2>
-                    <p class="text-base font-light leading-relaxed font-sans text-slate-600 mb-4">
-                        We built a secure environment where language models help bridge the gap between statistical analysis and cultural expertise. NotebookLM processes psychometric reports and flags patterns across dozens of items. Claude translates technical findings into plain-language briefs. Hawaiian educators review everything before it goes anywhere. Nothing leaves without cultural sign-off. The key insight: AI works here not as replacement but as translator and aggregator, always under human oversight.
-                    </p>
-                    <p class="research-question">
-                        <strong>Research question:</strong> How do you design AI workflows that augment expert judgment without extracting or exposing protected cultural content?
-                    </p>
-                </article>
+    <!-- What's Here Section -->
+    <section class="py-10 bg-white border-b border-slate-100">
+        <div class="max-w-4xl mx-auto px-6">
+            <h2 class="font-sans font-semibold text-2xl text-navy-900 tracking-tight mb-8">What's Here</h2>
 
-                <!-- Artifact 2: Interpretive Brief Framework -->
-                <article class="py-8 border-t border-slate-100">
-                    <span class="badge font-mono mb-3 inline-block">Assessment Translation</span>
-                    <h2 class="mb-3 text-lg md:text-xl font-semibold tracking-tight font-sans text-navy-900">
-                        Interpretive Brief Framework
-                    </h2>
-                    <p class="text-base font-light leading-relaxed font-sans text-slate-600 mb-4">
-                        In October 2024, we analyzed 58 flagged items across Hawaiian Language Arts, Math, and Science. Six interpretive briefs identified real issues: linguistic ambiguity, depth-of-knowledge misalignment, structural overload. The briefs translate psychometric signals into actionable feedback for content developers—without requiring them to understand factor analysis or DIF statistics. Each brief follows a structured format: statistical flag, plain-language interpretation, hypothesized cause, and recommended action.
-                    </p>
-                    <p class="research-question">
-                        <strong>Research question:</strong> What is lost—or gained—when technical knowledge is translated across expertise boundaries? How do translation artifacts shape downstream decisions?
-                    </p>
-                </article>
+            <!-- Featured (Coming Soon) -->
+            <div class="mb-10">
+                <h3 class="text-sm font-semibold text-slate-500 uppercase tracking-wide mb-4">Featured (coming soon)</h3>
+                <ul class="space-y-2 text-slate-600">
+                    <li class="flex items-center gap-2">
+                        <i data-lucide="video" class="w-4 h-4 text-slate-400"></i>
+                        Video: AI Lab in Action
+                    </li>
+                    <li class="flex items-center gap-2">
+                        <i data-lucide="video" class="w-4 h-4 text-slate-400"></i>
+                        Video: Computational Infrastructure Overview
+                    </li>
+                </ul>
+            </div>
 
-                <!-- Artifact 3: Cultural Review Protocol -->
-                <article class="py-8 border-t border-slate-100">
-                    <span class="badge font-mono mb-3 inline-block">Governance & Sovereignty</span>
-                    <h2 class="mb-3 text-lg md:text-xl font-semibold tracking-tight font-sans text-navy-900">
-                        Cultural Review Protocol
-                    </h2>
-                    <p class="text-base font-light leading-relaxed font-sans text-slate-600 mb-4">
-                        The workflow embeds explicit checkpoints where Hawaiian language experts review AI-generated outputs before they leave the secure environment. This isn't just quality assurance—it's sovereignty protection. Hawaiian content has historically been extracted, mistranslated, and misappropriated. The protocol ensures that computational tools serve the community's goals without creating new extraction risks. Every output is reviewed for cultural accuracy, appropriate framing, and alignment with ʻŌlelo Hawaiʻi revitalization values.
-                    </p>
-                    <p class="research-question">
-                        <strong>Research question:</strong> How do indigenous communities maintain authority over their own data when AI systems are involved? What governance structures preserve sovereignty while enabling beneficial applications?
-                    </p>
-                </article>
+            <!-- AI Lab Workflow Diagram -->
+            <div class="mb-10">
+                <h3 class="text-sm font-semibold text-slate-500 uppercase tracking-wide mb-4">AI Lab Workflow Diagram</h3>
+                <figure>
+                    <img src="AI-Lab-diagram.webp" alt="AI Lab Workflow Diagram" class="rounded-lg border border-slate-200 shadow-sm max-w-full">
+                    <figcaption class="text-sm text-slate-500 mt-3 italic">How the three-phase system works</figcaption>
+                </figure>
+            </div>
 
-                <!-- Synthesis -->
-                <div class="pt-8 mt-4">
-                    <p class="text-base font-light leading-relaxed font-sans text-slate-600 mb-4">
-                        This work sits at the intersection of educational measurement, AI ethics, and indigenous data sovereignty. The technical challenge—bridging psychometric and linguistic expertise—led to deeper questions about how computational systems can serve communities without extracting from them.
-                    </p>
-                    <p class="text-base font-light leading-relaxed font-sans text-slate-500">
-                        The KĀʻEO project demonstrates that AI tools can work in culturally sensitive contexts when designed with community authority at the center. That's a pattern I want to investigate further: the conditions under which computational mediation supports—rather than undermines—human expertise and cultural self-determination.
-                    </p>
-                </div>
-        </div>
-    </section>
+            <!-- AI Lab Documentation -->
+            <div class="mb-10">
+                <h3 class="text-sm font-semibold text-slate-500 uppercase tracking-wide mb-4">AI Lab Documentation</h3>
+                <ul class="space-y-3">
+                    <li>
+                        <a href="AI_Lab KAEO AI Policy v4.0.pdf" class="inline-flex items-center text-navy-800 hover:text-navy-900 transition-colors">
+                            <i data-lucide="file-text" class="w-4 h-4 mr-2"></i>
+                            AI Lab Principles & Policy Framework
+                        </a>
+                    </li>
+                    <li>
+                        <a href="AI_Lab.1 Project Instructions.pdf" class="inline-flex items-center text-navy-800 hover:text-navy-900 transition-colors">
+                            <i data-lucide="file-text" class="w-4 h-4 mr-2"></i>
+                            AI Lab Project Instructions
+                        </a>
+                    </li>
+                    <li>
+                        <a href="AI_Lab.2 Frameworks for Reviewing KĀʻEO Items.pdf" class="inline-flex items-center text-navy-800 hover:text-navy-900 transition-colors">
+                            <i data-lucide="file-text" class="w-4 h-4 mr-2"></i>
+                            AI Lab Frameworks for Reviewing KĀʻEO Items
+                        </a>
+                    </li>
+                    <li>
+                        <a href="AI_Lab.3 Guidelines for Developer-Focused Interpretive Briefs.pdf" class="inline-flex items-center text-navy-800 hover:text-navy-900 transition-colors">
+                            <i data-lucide="file-text" class="w-4 h-4 mr-2"></i>
+                            AI Lab Guidelines for Interpretive Briefs
+                        </a>
+                    </li>
+                </ul>
+            </div>
 
-    <!-- Publication -->
-    <section class="py-12 md:py-16 bg-[#E8E8E8] border-t border-slate-100">
-        <div class="max-w-3xl mx-auto px-6">
-            <div class="bg-white border border-slate-100 rounded-xl p-8 md:p-10 shadow-sm">
-                <div class="flex items-start gap-4">
-                    <i data-lucide="file-text" class="flex-shrink-0 w-6 h-6 mt-1 text-navy-900"></i>
-                    <div>
-                        <h3 class="mb-3 text-lg font-bold leading-snug font-sans text-navy-900">
-                            Bridging Psychometric and Content Development Practices with AI: A Community-Based Workflow for Augmenting Hawaiian Language Assessments
-                        </h3>
-                        <p class="mb-2 text-base font-light font-sans text-slate-600">
-                            Kūkea-Shultz, P. & Brockmann, F.
-                        </p>
-                        <p class="text-xs font-bold uppercase font-mono tracking-wider text-slate-500">
-                            arXiv · December 2025
-                        </p>
-                    </div>
-                </div>
+            <!-- Hawaiian Font Analysis Project -->
+            <div class="mb-10">
+                <h3 class="text-sm font-semibold text-slate-500 uppercase tracking-wide mb-4">Hawaiian Font Analysis Project</h3>
+                <p class="text-slate-600 mb-3">Tools for analyzing whether fonts correctly render Hawaiian diacritical marks (ʻokina and kahakō) across different systems and browsers.</p>
+                <a href="https://github.com/frankbydesign/hawaiian-font-analysis" target="_blank" rel="noopener" class="inline-flex items-center text-navy-800 hover:text-navy-900 transition-colors">
+                    <i data-lucide="github" class="w-4 h-4 mr-2"></i>
+                    View Repository
+                    <i data-lucide="external-link" class="w-3.5 h-3.5 ml-1.5"></i>
+                </a>
+            </div>
+
+            <!-- Hawaiian Diacriticals Project -->
+            <div class="mb-10">
+                <h3 class="text-sm font-semibold text-slate-500 uppercase tracking-wide mb-4">Hawaiian Diacriticals Project</h3>
+                <p class="text-slate-600 mb-3">A utility for converting incorrectly encoded Hawaiian text to proper Unicode characters.</p>
+                <a href="https://github.com/frankbydesign/hawaiian-diacriticals" target="_blank" rel="noopener" class="inline-flex items-center text-navy-800 hover:text-navy-900 transition-colors">
+                    <i data-lucide="github" class="w-4 h-4 mr-2"></i>
+                    View Repository
+                    <i data-lucide="external-link" class="w-3.5 h-3.5 ml-1.5"></i>
+                </a>
+            </div>
+
+            <!-- KĀʻEO Program Website -->
+            <div class="mb-10">
+                <h3 class="text-sm font-semibold text-slate-500 uppercase tracking-wide mb-4">KĀʻEO Program Website</h3>
+                <p class="text-slate-600 mb-3">Public-facing website I built and maintain for the program, providing information about Hawaiian-medium assessment for educators and families.</p>
+                <a href="https://kaeo.org" target="_blank" rel="noopener" class="inline-flex items-center text-navy-800 hover:text-navy-900 transition-colors">
+                    <i data-lucide="globe" class="w-4 h-4 mr-2"></i>
+                    kaeo.org
+                    <i data-lucide="external-link" class="w-3.5 h-3.5 ml-1.5"></i>
+                </a>
+            </div>
+
+            <!-- Collaborators -->
+            <div class="pt-6 border-t border-slate-100">
+                <p class="text-slate-500"><strong class="text-slate-600">Collaborators:</strong> Pohai Kūkea-Shultz, Kerry Englert</p>
             </div>
         </div>
     </section>
 
     <!-- Footer -->
-    <footer class="py-12 border-t border-slate-100 bg-white">
-        <div class="max-w-3xl mx-auto px-6">
-            <a href="index.html" class="inline-flex items-center text-xs font-bold uppercase transition-colors font-mono tracking-widest text-navy-900 hover:text-navy-800">
-                <i data-lucide="arrow-left" class="w-3.5 h-3.5 mr-2"></i>
+    <footer class="py-8 border-t border-slate-100 bg-white">
+        <div class="max-w-4xl mx-auto px-6 flex items-center justify-between">
+            <a href="index.html" class="inline-flex items-center text-sm text-navy-800 hover:text-navy-900 transition-colors">
+                <i data-lucide="arrow-left" class="w-4 h-4 mr-2"></i>
                 Back to Portfolio
             </a>
+            <p class="text-sm text-slate-400">&copy; 2025 Frank Brockmann</p>
         </div>
     </footer>
 

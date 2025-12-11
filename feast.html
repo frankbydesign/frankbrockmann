@@ -3,8 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="F.E.A.S.T. Project: Computational Infrastructure for Crisis Care. Five years inside the systems that mediate support for 15,000 families annually.">
-    <title>F.E.A.S.T. Project - Frank Brockmann</title>
+    <meta name="description" content="F.E.A.S.T.: Technology Infrastructure for Caregiver Support. Systems that connect families to evidence-based eating disorder resources and peer support.">
+    <title>F.E.A.S.T. - Frank Brockmann</title>
     <link rel="icon" type="image/svg+xml" href="favicon.svg">
 
     <!-- Fonts: Readex Pro & Source Code Pro -->
@@ -24,77 +24,21 @@
         theme: {
           extend: {
             colors: {
-              navy: {
-                50: '#EFF6FF',
-                800: '#005599',
-                900: '#003C6C',
-                950: '#002A4D',
-              },
-              gold: {
-                400: '#FECB00',
-                500: '#F1B521',
-                700: '#A16207',
-              },
-              slate: {
-                50: '#F8FAFC',
-                100: '#F1F5F9',
-                200: '#E2E8F0',
-                500: '#64748B',
-                600: '#475569',
-                900: '#0F172A',
-              }
+              navy: { 50: '#EFF6FF', 800: '#005599', 900: '#003C6C', 950: '#002A4D' },
+              gold: { 400: '#FECB00', 500: '#F1B521', 600: '#EAB308', 700: '#A16207' },
+              slate: { 50: '#F8FAFC', 100: '#F1F5F9', 200: '#E2E8F0', 500: '#64748B', 600: '#475569', 900: '#0F172A' }
             },
             fontFamily: {
               sans: ['"Readex Pro"', 'sans-serif'],
               mono: ['"Source Code Pro"', 'monospace'],
             },
-            letterSpacing: {
-              tight: '-0.025em',
-              widest: '0.1em',
-            }
+            letterSpacing: { tight: '-0.025em', widest: '0.1em' }
           }
         }
       }
     </script>
-
-    <!-- Reusable Component Styles -->
-    <style>
-      /* Badge/Tag - subtle pill-style labels */
-      .badge {
-        display: inline-block;
-        padding: 0.25rem 0.625rem;
-        font-size: 0.6875rem;
-        font-weight: 500;
-        letter-spacing: 0.02em;
-        border-radius: 9999px;
-        background-color: #F1F5F9;
-        color: #475569;
-      }
-      /* Callout - prominent message block */
-      .callout {
-        background-color: #F8FAFC;
-        border-left: 4px solid #F1B521;
-        padding: 1.5rem 2rem;
-        border-radius: 0 0.75rem 0.75rem 0;
-        margin: 2rem 0;
-      }
-      .callout p {
-        font-size: 1.125rem;
-        font-style: italic;
-        color: #003C6C;
-        margin: 0;
-        line-height: 1.75;
-      }
-      /* Research question styling */
-      .research-question {
-        font-style: italic;
-        font-size: 0.9375rem;
-        line-height: 1.75;
-        color: #475569;
-      }
-    </style>
 </head>
-<body class="bg-white">
+<body class="bg-white text-[17px]">
     <a href="#main-content" class="sr-only focus:not-sr-only focus:absolute focus:top-0 focus:left-0 focus:z-50 focus:px-4 focus:py-2 focus:bg-navy-900 focus:text-white font-mono text-xs uppercase">Skip to main content</a>
 
     <!-- Navigation -->
@@ -104,7 +48,7 @@
                 Frank Brockmann
             </a>
             <div class="flex gap-6">
-                <a href="index.html#projects" class="text-sm text-slate-200 hover:text-gold-500 transition-colors">Projects</a>
+                <a href="index.html#projects" class="text-sm text-slate-200 hover:text-gold-500 transition-colors">Portfolio Projects</a>
                 <a href="index.html#publications" class="text-sm text-slate-200 hover:text-gold-500 transition-colors">Publications & Presentations</a>
                 <a href="index.html#education" class="text-sm text-slate-200 hover:text-gold-500 transition-colors">Education</a>
                 <a href="index.html#contact" class="text-sm text-slate-200 hover:text-gold-500 transition-colors">Contact</a>
@@ -114,108 +58,82 @@
 
     <!-- Breadcrumb -->
     <div class="py-4 bg-white border-b border-slate-100">
-        <div class="max-w-3xl mx-auto px-6">
+        <div class="max-w-4xl mx-auto px-6">
             <div class="flex items-center gap-2 text-sm font-mono">
                 <a href="index.html" class="text-navy-900 hover:text-navy-800 transition-colors">Portfolio</a>
                 <i data-lucide="chevron-right" class="w-4 h-4 text-slate-400"></i>
-                <span class="text-slate-500">F.E.A.S.T. Project</span>
+                <span class="text-slate-500">F.E.A.S.T.</span>
             </div>
         </div>
     </div>
 
-    <!-- Header -->
-    <section class="py-16 md:py-24 bg-[#E8E8E8] border-b border-slate-100">
-        <div class="max-w-3xl mx-auto px-6">
-            <span class="font-mono text-xs font-bold text-gold-700 uppercase tracking-widest mb-4 block">F.E.A.S.T. · Director of Technology Services · 2020–present</span>
-            <h1 id="main-content" class="mb-6 text-3xl md:text-5xl font-bold tracking-tight font-sans text-navy-900 leading-tight">
-                Computational Infrastructure for Crisis Care
-            </h1>
-            <div class="space-y-6">
-                <p class="text-base font-light leading-loose font-sans text-slate-600">
-                    F.E.A.S.T. supports 15,000+ families annually navigating eating disorder care and treatment—a population in crisis which is often making high-stakes decisions with limited information.
-                </p>
-                <p class="text-base font-light leading-loose font-sans text-slate-600">
-                    Since 2020, I've worked inside this organization's computational infrastructure: shaping how automated messages reach families in distress, establishing what AI should and shouldn't do in a care context, and building tools that surface patterns leadership couldn't see.
-                </p>
-                <div class="callout">
-                    <p>What happens when "helping someone" becomes a database operation?</p>
+    <!-- Header Section -->
+    <section id="main-content" class="py-12 bg-[#E8E8E8] border-b border-slate-100">
+        <div class="max-w-4xl mx-auto px-6">
+            <div class="flex items-start gap-6 mb-6">
+                <img src="logo_feast.png" alt="F.E.A.S.T. Logo" class="w-20 h-20 object-contain flex-shrink-0">
+                <div>
+                    <h1 class="font-sans font-bold text-4xl text-navy-900 tracking-tight mb-2">F.E.A.S.T.</h1>
+                    <p class="text-lg text-slate-600 mb-1">Technology Infrastructure for Caregiver Support</p>
+                    <p class="text-sm text-slate-500">Director of Technology Services · 2020–Present</p>
                 </div>
+            </div>
+
+            <p class="text-sm italic text-slate-500 mb-6">This page is under construction.</p>
+
+            <p class="text-lg text-slate-600 leading-relaxed">
+                F.E.A.S.T. supports families navigating eating disorder treatment, about 15,000 each year. As the only technical staff, I built and maintain the systems that connect families to evidence-based resources and peer support. This work includes CRM infrastructure, analytics tools, communications systems, and organizational AI policy.
+            </p>
+        </div>
+    </section>
+
+    <!-- What's Here Section -->
+    <section class="py-10 bg-white border-b border-slate-100">
+        <div class="max-w-4xl mx-auto px-6">
+            <h2 class="font-sans font-semibold text-2xl text-navy-900 tracking-tight mb-8">What's Here</h2>
+
+            <!-- Donor Pattern Analyzer -->
+            <div class="mb-10">
+                <h3 class="text-sm font-semibold text-slate-500 uppercase tracking-wide mb-4">Donor Pattern Analyzer</h3>
+                <p class="text-slate-600 mb-3">Interactive tool surfacing concentration risk, retention trends, and lapse predictions from six years of donation data.</p>
+                <a href="https://frankbydesign.github.io/donation-pattern-analyzer/" target="_blank" rel="noopener" class="inline-flex items-center text-navy-800 hover:text-navy-900 transition-colors">
+                    <i data-lucide="bar-chart-2" class="w-4 h-4 mr-2"></i>
+                    View Live Tool
+                    <i data-lucide="external-link" class="w-3.5 h-3.5 ml-1.5"></i>
+                </a>
+            </div>
+
+            <!-- AI Governance Policy -->
+            <div class="mb-10">
+                <h3 class="text-sm font-semibold text-slate-500 uppercase tracking-wide mb-4">AI Governance Policy</h3>
+                <p class="text-slate-600 mb-3">Establishes boundaries for AI use in a care organization serving vulnerable populations.</p>
+                <a href="https://feast-ed.org/ai-policy/" target="_blank" rel="noopener" class="inline-flex items-center text-navy-800 hover:text-navy-900 transition-colors">
+                    <i data-lucide="shield" class="w-4 h-4 mr-2"></i>
+                    View Policy
+                    <i data-lucide="external-link" class="w-3.5 h-3.5 ml-1.5"></i>
+                </a>
+            </div>
+
+            <!-- Voice & Tone Guide -->
+            <div class="mb-10">
+                <h3 class="text-sm font-semibold text-slate-500 uppercase tracking-wide mb-4">Voice & Tone Guide</h3>
+                <p class="text-slate-600 mb-3">Guardrails for how the organization communicates with families.</p>
+                <a href="brandguide_feast.pdf" class="inline-flex items-center text-navy-800 hover:text-navy-900 transition-colors">
+                    <i data-lucide="file-text" class="w-4 h-4 mr-2"></i>
+                    View Guide (PDF)
+                </a>
             </div>
         </div>
     </section>
 
-    <!-- Artifacts Container -->
-    <section class="py-8 md:py-12 bg-white">
-        <div class="max-w-3xl mx-auto px-6">
-                <!-- Artifact 1: Voice & Tone Guide -->
-                <article class="py-8 border-t border-slate-100">
-                    <span class="badge font-mono mb-3 inline-block">Language & Communication</span>
-                    <h2 class="mb-3 text-lg md:text-xl font-semibold tracking-tight font-sans text-navy-900">
-                        Voice & Tone Guide
-                    </h2>
-                    <p class="text-base font-light leading-relaxed font-sans text-slate-600 mb-4">
-                        When families contact F.E.A.S.T. in crisis, they encounter communications across multiple channels—email sequences, social media, website copy, support group facilitation. These touchpoints are often templated, scheduled, or produced at scale. I developed a voice and tone guide that establishes guardrails for how the organization speaks to people in distress. The constraints are specific: empathetic but not effusive, knowledgeable but not clinical, encouraging without false promises. Short sentences. Limited exclamation marks. Comfort and reassurance in every message. This isn't a style guide about fonts and colors. It's a set of design decisions about what care should sound like when it's mediated by templates, automation, and organizational scale.
-                    </p>
-                    <p class="research-question">
-                        <strong>Research question:</strong> How do you systematize empathy? What gets preserved—and what gets lost—when compassionate communication must be reproducible across staff, volunteers, and channels?
-                    </p>
-                </article>
-
-                <!-- Artifact 2: AI Governance Policy -->
-                <article class="py-8 border-t border-slate-100">
-                    <span class="badge font-mono mb-3 inline-block">Governance & Ethics</span>
-                    <h2 class="mb-2 text-lg md:text-xl font-semibold tracking-tight font-sans text-navy-900">
-                        AI Governance Policy
-                    </h2>
-                    <a href="https://feast-ed.org/ai-policy/" target="_blank" rel="noopener noreferrer" class="inline-flex items-center text-sm font-medium text-navy-800 hover:text-navy-900 transition-colors mb-4">
-                        View Full Policy
-                        <i data-lucide="external-link" class="w-3.5 h-3.5 ml-1.5"></i>
-                    </a>
-                    <p class="text-base font-light leading-relaxed font-sans text-slate-600 mb-4">
-                        As AI tools became accessible to small nonprofits, F.E.A.S.T. faced decisions most organizations were ignoring: Where should AI be used? Where should it be prohibited? Who decides? I drafted the organization's AI policy, now published on their website. The core position: AI may improve internal operations, but it will never mediate direct support. No chatbots. No automated crisis response. No situation where a caregiver might believe they're talking to a human when they're not. The policy also addresses data protection (no training on F.E.A.S.T. inputs), requires human oversight on all AI outputs, and names risks specific to this population: misinformation about eating disorders, bias in how bodies are discussed, tone failures in sensitive contexts, and erosion of trust in human connection.
-                    </p>
-                    <p class="research-question">
-                        <strong>Research question:</strong> How do small organizations establish AI governance that protects vulnerable populations? What frameworks help non-technical leaders make these decisions?
-                    </p>
-                </article>
-
-                <!-- Artifact 3: Donor Pattern Analyzer -->
-                <article class="py-8 border-t border-slate-100">
-                    <span class="badge font-mono mb-3 inline-block">Decision Support</span>
-                    <h2 class="mb-2 text-lg md:text-xl font-semibold tracking-tight font-sans text-navy-900">
-                        Donor Pattern Analyzer
-                    </h2>
-                    <a href="https://frankbydesign.github.io/donation-pattern-analyzer/" target="_blank" rel="noopener noreferrer" class="inline-flex items-center text-sm font-medium text-navy-800 hover:text-navy-900 transition-colors mb-4">
-                        View Live Tool
-                        <i data-lucide="external-link" class="w-3.5 h-3.5 ml-1.5"></i>
-                    </a>
-                    <p class="text-base font-light leading-relaxed font-sans text-slate-600 mb-4">
-                        Six years of donation data. 3,400+ donors. Patterns invisible in spreadsheets. I built an interactive analytics tool that surfaces concentration risk, retention trends, lapse predictions, and data quality flags—designed to scaffold executive decision-making about organizational sustainability. The tool contextualizes performance against sector benchmarks and economic conditions, helping leadership distinguish "is this us?" from "is this everyone?" This wasn't a consulting deliverable. It emerged from years of watching how leadership struggled to see patterns in their own data—and asking what kind of computational media might augment that capacity.
-                    </p>
-                    <p class="research-question">
-                        <strong>Research question:</strong> How do different visual representations of risk change nonprofit leaders' prioritization decisions? What does it mean to design for augmented judgment rather than automated answers?
-                    </p>
-                </article>
-
-                <!-- Synthesis -->
-                <div class="pt-8 mt-4">
-                    <p class="text-base font-light leading-relaxed font-sans text-slate-600 mb-4">
-                        These three artifacts sit at different layers of the same organization—language, governance, decision-making. But they share a common thread: each required designing constraints that shape how humans experience care, or how leaders make decisions about sustaining care.
-                    </p>
-                    <p class="text-base font-light leading-relaxed font-sans text-slate-500">
-                        A tone guide determines what support sounds like at scale. An AI policy draws boundaries around where automation belongs. A visualization tool surfaces what spreadsheets hide. None of these are neutral technical choices. Each embeds assumptions about what matters, what's visible, and who has agency. That's the terrain I want to investigate as a researcher: the computational mediation of care practices, and the design decisions that make those systems more—or less—humane.
-                    </p>
-                </div>
-        </div>
-    </section>
-
     <!-- Footer -->
-    <footer class="py-12 border-t border-slate-100 bg-white">
-        <div class="max-w-3xl mx-auto px-6">
-            <a href="index.html" class="inline-flex items-center text-xs font-bold uppercase transition-colors font-mono tracking-widest text-navy-900 hover:text-navy-800">
-                <i data-lucide="arrow-left" class="w-3.5 h-3.5 mr-2"></i>
+    <footer class="py-8 border-t border-slate-100 bg-white">
+        <div class="max-w-4xl mx-auto px-6 flex items-center justify-between">
+            <a href="index.html" class="inline-flex items-center text-sm text-navy-800 hover:text-navy-900 transition-colors">
+                <i data-lucide="arrow-left" class="w-4 h-4 mr-2"></i>
                 Back to Portfolio
             </a>
+            <p class="text-sm text-slate-400">&copy; 2025 Frank Brockmann</p>
         </div>
     </footer>
 

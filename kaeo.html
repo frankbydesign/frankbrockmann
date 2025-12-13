@@ -54,16 +54,29 @@
         padding: 2rem 0;
       }
 
-      /* Under Construction Notice */
-      .construction-notice {
-        background: #fffbeb;
-        border: 1px solid #f59e0b;
-        border-radius: 4px;
-        padding: 0.75rem 1rem;
-        margin: 1.5rem 0;
+      /* Publication Callout */
+      .publication-callout {
+        background: #f0f7ff;
+        border-left: 3px solid #3182ce;
+        padding: 1rem 1.25rem;
+        margin: 2rem 0;
+        border-radius: 0 4px 4px 0;
+      }
+
+      .publication-callout h4 {
+        margin: 0 0 0.5rem 0;
+        font-size: 0.7rem;
+        font-weight: 700;
+        text-transform: uppercase;
+        letter-spacing: 0.1em;
+        color: #2c5282;
+      }
+
+      .publication-callout p {
+        margin: 0;
         font-size: 0.9rem;
-        color: #92400e;
-        font-style: italic;
+        line-height: 1.5;
+        color: #4a5568;
       }
 
       /* ==========================================
@@ -164,6 +177,7 @@
          ========================================== */
       .content-section h2 {
         margin-top: 2.5rem;
+        margin-bottom: 1.25rem;
       }
 
       .content-section h3 {
@@ -267,7 +281,7 @@
                     <p class="text-lg text-slate-600 mb-1">AI Tools and Computational Systems Infrastructure to Support Hawaiian Language Assessment and Revitalization</p>
                     <p class="text-sm text-slate-500 mb-4">Assessment Consultant & AI Lab Co-Designer · 2016–Present</p>
                     <p class="text-base text-slate-600 leading-relaxed">
-                        KĀʻEO is the only Hawaiian-medium assessment system in the world, serving approximately 3,000 students in Hawaiʻi's immersion schools. Since 2016, I've worked with the program on assessment development and psychometric analysis. In 2025, I co-designed an AI Lab that bridged psychometric analysis and Hawaiian cultural and language expertise, while keeping Hawaiian content under community control.
+                        KĀʻEO is the only Hawaiian-medium assessment system in the world, serving approximately 3,000 students as part of the <a href="https://hawaiipublicschools.org/enrolling-in-school/hawaiian-immersion-school/">Hawaiian Language Immersion program</a>. Since 2016, I've worked with researchers and program leads to build an infrastructure that bridges Hawaiian language test content development and psychometric analysis. In 2025, I co-designed an AI Lab that bridged psychometric analysis and Hawaiian cultural and language expertise, while keeping Hawaiian content under community control.
                     </p>
                 </div>
             </div>
@@ -277,12 +291,10 @@
     <!-- Main Content Area - White Background -->
     <section class="main-content">
         <div class="max-w-4xl mx-auto px-6">
-            <p class="construction-notice">This page is under construction. More artifacts coming soon.</p>
-
             <div class="metadata-cards">
               <div class="card">
                 <h4 class="card-label">My Role</h4>
-                <p>Co-designed the AI Lab architecture and three-phase workflow. Wrote all prompt engineering, system documentation, and governance frameworks. Operated the NotebookLM and Claude toolchain during Round 2 analysis. Co-authored the methodology paper (in submission).</p>
+                <p>I designed the AI Lab architecture and collaborated with Hawaiian Language and cultural experts as part of a three-phase workflow. The project started with the development of governance frameworks, and I conducted all prompt engineering, system documentation, and design tasks for a RAG framework on top of two flagship LLM tools (NotebookLM and Claude).</p>
                 <div class="collaborators">
                   <span class="collab-label">Collaborators</span>
                   <p>Pōhai Kūkea-Shultz provided Hawaiian linguistic and cultural authority and serves as lead author on the research paper. Kerry Englert provided the psychometric analysis that served as input to the AI Lab process.</p>
@@ -301,10 +313,15 @@
               </div>
             </div>
 
+            <div class="publication-callout">
+              <h4>Publication</h4>
+              <p>Kūkea-Shultz, P. & Brockmann, F. (2025). <em>Bridging Psychometric and Content Development Practices with AI: A Community-Based Workflow for Augmenting Hawaiian Language Assessments.</em> In submission to arXiv, December 2025.</p>
+            </div>
+
             <div class="content-section">
                 <h2 class="font-sans font-semibold text-2xl text-navy-900 tracking-tight" style="margin-top: 0;">Design Logic: Humans ARE the Loop</h2>
 
-                <p class="text-slate-600 leading-relaxed">The AI Lab inverts the conventional "human-in-the-loop" framing. Rather than placing humans as checkpoints within an automated process, we embedded AI tools within a human-governed workflow. Hawaiian educators and psychometric experts aren't merely participants—they ARE the loop.</p>
+                <p class="text-slate-600 leading-relaxed">The AI Lab inverts the conventional "human-in-the-loop" framing. Rather than placing humans as checkpoints within an automated process, we embedded AI tools within a human-governed workflow. Hawaiian educators and psychometric experts aren't merely participants: they ARE the loop.</p>
 
                 <p class="text-slate-600 leading-relaxed"><strong>The problem we solved:</strong> KĀʻEO assessments are written entirely in Hawaiian, but most psychometric analysts aren't Hawaiian speakers. Conversely, content developers are experts in language and pedagogy, not psychometrics. This created a structural gap: statistical flags could identify <em>that</em> items performed poorly, but interpreting <em>why</em> required scarce bilingual intermediaries who could bridge both domains.</p>
 
@@ -337,16 +354,7 @@
                   </tbody>
                 </table>
 
-                <p class="text-slate-600 leading-relaxed"><strong>Why this matters:</strong> The AI excels at structural pattern recognition—identifying DOK misalignment, cognitive overload, format constraints. But it cannot grasp the figurative depth and relational meaning embedded in Hawaiian. When the AI misinterpreted certain grammatical features as errors, KĀʻEO staff caught it: these were actually highly valued language skills. This limitation isn't a flaw to fix—it's a boundary to respect.</p>
-
-                <h3 class="font-sans font-semibold text-xl text-navy-900 tracking-tight outcomes-section">Outcomes (Round 2, October 2025)</h3>
-
-                <ul class="text-slate-600 space-y-2">
-                  <li><strong>58 flagged items</strong> analyzed across Hawaiian Language Arts, Mathematics, and Science</li>
-                  <li><strong>6 interpretive briefs</strong> produced and approved for release to content developers</li>
-                  <li><strong>Systemic patterns identified:</strong> linguistic ambiguity, DOK misalignment, structural overload</li>
-                  <li><strong>Methodology paper:</strong> <em>Bridging Psychometric and Content Development Practices with AI</em> (Kūkea-Shultz & Brockmann, in submission to arXiv, December 2025)</li>
-                </ul>
+                <p class="text-slate-600 leading-relaxed"><strong>Why this matters:</strong> The AI excels at structural pattern recognition (identifying DOK misalignment, cognitive overload, and format constraints). But it cannot grasp the figurative depth and relational meaning embedded in Hawaiian. When the AI misinterpreted certain grammatical features as errors, KĀʻEO staff caught it: these were actually highly valued language skills. This limitation isn't a flaw to fix; it's a boundary to respect.</p>
             </div>
         </div>
     </section>
@@ -392,15 +400,11 @@
                     <li>Kūkea-Shultz, P. & Brockmann, F. (2025). <em>Bridging Psychometric and Content Development Practices with AI: A Community-Based Workflow for Augmenting Hawaiian Language Assessments.</em> Preprint forthcoming, arXiv, December 2025.</li>
                 </ul>
             </div>
-        </div>
-    </section>
 
-    <!-- Computational Infrastructure Section -->
-    <section class="py-10 bg-white border-b border-slate-100">
-        <div class="max-w-4xl mx-auto px-6">
-            <h2 class="font-sans font-semibold text-2xl text-navy-900 tracking-tight mb-4">Computational Infrastructure</h2>
+            <!-- Computational Infrastructure -->
+            <h2 class="font-sans font-semibold text-2xl text-navy-900 tracking-tight mb-4 mt-10">Computational Infrastructure</h2>
 
-            <p class="text-slate-600 leading-relaxed mb-8">The AI Lab builds on nine years of infrastructure development for the KĀʻEO program—tools that address the practical challenges of operating a Hawaiian-medium assessment system with limited technical resources.</p>
+            <p class="text-slate-600 leading-relaxed mb-8">The AI Lab builds on nine years of infrastructure development for the KĀʻEO program, including tools that address the practical challenges of operating a Hawaiian-medium assessment system with limited technical resources.</p>
 
             <!-- Hawaiian Font Analysis Project -->
             <div class="mb-10">

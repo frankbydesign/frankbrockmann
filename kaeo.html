@@ -39,11 +39,61 @@
     </script>
     <style>
       .callout-box {
-        background: #f8f9fa;
-        border-left: 4px solid #2c5282;
+        background: #f0f7ff;
+        border-left: 3px solid #3182ce;
         padding: 1.25rem 1.5rem;
         margin: 2rem 0;
         border-radius: 0 4px 4px 0;
+      }
+
+      /* Eyebrow label style */
+      .callout-box h4 {
+        margin: 0 0 0.625rem 0;
+        color: #2c5282;
+        font-size: 0.75rem;
+        font-weight: 600;
+        text-transform: uppercase;
+        letter-spacing: 0.08em;
+      }
+
+      /* Callout body text - smaller, tighter, slightly muted */
+      .callout-box p {
+        margin: 0 0 0.5rem 0;
+        color: #3d4852;
+        font-size: 0.9rem;
+        font-weight: 400;
+        line-height: 1.5;
+      }
+
+      .callout-box p:last-child {
+        margin-bottom: 0;
+      }
+
+      /* Strong text within callouts */
+      .callout-box strong {
+        font-weight: 600;
+        color: #2d3748;
+      }
+
+      /* Lists within callouts */
+      .callout-box ul {
+        margin: 0;
+        padding: 0;
+        list-style: none;
+      }
+
+      .callout-box li {
+        margin: 0.375rem 0;
+        color: #3d4852;
+        font-size: 0.9rem;
+        font-weight: 400;
+        line-height: 1.5;
+      }
+
+      /* Bold labels within list items (Technical:, Creative:, Interpretive:) */
+      .callout-box li strong {
+        font-weight: 600;
+        color: #2c5282;
       }
 
       .content-section h2 {
@@ -60,20 +110,6 @@
 
       .content-section .outcomes-section {
         margin-top: 2rem;
-      }
-
-      .callout-box h4 {
-        margin-top: 0;
-        color: #2c5282;
-        font-size: 1.1rem;
-      }
-
-      .callout-box ul {
-        margin-bottom: 0;
-      }
-
-      .callout-box p:last-child {
-        margin-bottom: 0;
       }
 
       .workflow-table {

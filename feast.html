@@ -37,6 +37,154 @@
         }
       }
     </script>
+    <style>
+      /* ==========================================
+         FEAST PAGE STYLES - Clean Visual System
+         ========================================== */
+
+      /* ==========================================
+         Two-Column Metadata Cards
+         ========================================== */
+      .metadata-cards {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 1.5rem;
+        margin: 2rem 0;
+      }
+
+      @media (max-width: 768px) {
+        .metadata-cards {
+          grid-template-columns: 1fr;
+        }
+      }
+
+      .card {
+        background: #f8fafc;
+        border: 1px solid #e2e8f0;
+        border-radius: 6px;
+        padding: 1.5rem;
+      }
+
+      .card-label {
+        font-size: 0.7rem;
+        font-weight: 700;
+        text-transform: uppercase;
+        letter-spacing: 0.1em;
+        color: #ffffff;
+        background: #2c5282;
+        padding: 0.6rem 1.5rem;
+        margin: -1.5rem -1.5rem 1rem -1.5rem;
+        border-radius: 5px 5px 0 0;
+      }
+
+      .card p {
+        font-size: 0.9rem;
+        line-height: 1.6;
+        color: #4a5568;
+        margin: 0 0 1rem 0;
+      }
+
+      .card p:last-child {
+        margin-bottom: 0;
+      }
+
+      /* Collaborators sub-section */
+      .collaborators {
+        margin-top: 1.25rem;
+        padding-top: 1rem;
+        border-top: 1px solid #e2e8f0;
+      }
+
+      .collab-label {
+        display: block;
+        font-size: 0.65rem;
+        font-weight: 700;
+        text-transform: uppercase;
+        letter-spacing: 0.1em;
+        color: #718096;
+        margin-bottom: 0.5rem;
+      }
+
+      .collaborators p {
+        font-size: 0.85rem;
+        color: #718096;
+        margin: 0;
+      }
+
+      /* Portfolio Dimensions definition list */
+      .dimensions-list {
+        margin: 0;
+      }
+
+      .dimensions-list dt {
+        font-size: 0.75rem;
+        font-weight: 700;
+        text-transform: uppercase;
+        letter-spacing: 0.05em;
+        color: #2c5282;
+        margin-top: 1rem;
+      }
+
+      .dimensions-list dt:first-child {
+        margin-top: 0;
+      }
+
+      .dimensions-list dd {
+        margin: 0.25rem 0 0 0;
+        font-size: 0.85rem;
+        line-height: 1.5;
+        color: #4a5568;
+      }
+
+      /* ==========================================
+         Workflow Table
+         ========================================== */
+      .workflow-table {
+        width: 75%;
+        border-collapse: collapse;
+        margin: 1rem 0;
+        font-size: 0.95rem;
+      }
+
+      .workflow-table th,
+      .workflow-table td {
+        border: 1px solid #ddd;
+        padding: 0.75rem;
+        text-align: left;
+      }
+
+      .workflow-table th {
+        background: #2c5282;
+        color: white;
+      }
+
+      .workflow-table tr:nth-child(even) {
+        background: #f8f9fa;
+      }
+
+      /* ==========================================
+         Footer - Match Header Blue
+         ========================================== */
+      .site-footer {
+        background: #2c5282;
+        color: #ffffff;
+        padding: 1.5rem 0;
+        margin-top: 3rem;
+      }
+
+      .site-footer a {
+        color: #90cdf4;
+      }
+
+      .site-footer a:hover {
+        color: #ffffff;
+      }
+
+      .site-footer p {
+        color: #ffffff;
+        margin: 0;
+      }
+    </style>
 </head>
 <body class="bg-white text-[17px]">
     <a href="#main-content" class="sr-only focus:not-sr-only focus:absolute focus:top-0 focus:left-0 focus:z-50 focus:px-4 focus:py-2 focus:bg-navy-900 focus:text-white font-mono text-xs uppercase">Skip to main content</a>
@@ -85,8 +233,26 @@
                 </div>
             </div>
 
-            <div class="bg-amber-50 border border-amber-200 rounded-md px-4 py-3 mb-6">
-                <p class="text-sm italic text-amber-700">This page is under construction. More artifacts coming soon.</p>
+            <div class="metadata-cards">
+              <div class="card">
+                <h4 class="card-label">My Role</h4>
+                <p>I serve as the sole technology staff, responsible for all systems architecture, implementation, and maintenance. I built the FEAST 30 Days delivery infrastructure (Mailchimp, then Salesforce), developed the AI ethics policy, created donor analytics tools, and established voice/tone guidelines. All technical decisions—timing logic, segmentation rules, content triggers, platform migrations—are mine.</p>
+                <div class="collaborators">
+                  <span class="collab-label">Collaborators</span>
+                  <p>Judy Krasna (Executive Director) provides organizational leadership and content strategy. Clinical advisors developed the 30-day curriculum content; my role was designing and building the delivery system.</p>
+                </div>
+              </div>
+              <div class="card">
+                <h4 class="card-label">CM Portfolio Dimensions</h4>
+                <dl class="dimensions-list">
+                  <dt>Technical</dt>
+                  <dd>Salesforce/Mailchimp automation, timed content delivery logic, donor pattern analytics, CRM infrastructure</dd>
+                  <dt>Creative</dt>
+                  <dd>Information sequencing design, voice & tone guidelines, crisis communication frameworks</dd>
+                  <dt>Interpretive</dt>
+                  <dd>AI ethics policy for care contexts, computational scaffolding as design methodology, UX research in crisis situations</dd>
+                </dl>
+              </div>
             </div>
         </div>
     </section>
@@ -257,14 +423,14 @@
         </div>
     </section>
 
-    <!-- Footer -->
-    <footer class="py-8 border-t border-slate-100 bg-white">
+    <!-- Footer - Matches Header Blue -->
+    <footer class="site-footer">
         <div class="max-w-4xl mx-auto px-6 flex items-center justify-between">
-            <a href="index.html" class="inline-flex items-center text-sm text-navy-800 hover:text-navy-900 transition-colors">
+            <a href="index.html" class="inline-flex items-center text-sm transition-colors">
                 <i data-lucide="arrow-left" class="w-4 h-4 mr-2"></i>
                 Back to Portfolio
             </a>
-            <p class="text-sm text-slate-400">&copy; 2025 Frank Brockmann</p>
+            <p class="text-sm">&copy; 2025 Frank Brockmann</p>
         </div>
     </footer>
 

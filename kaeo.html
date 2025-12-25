@@ -38,8 +38,10 @@
       }
     </script>
     <style>
-      /* Link colors */
-      a:link {
+      /* Link colors - scoped to main content, not nav */
+      main a:link,
+      section a:link,
+      .main-content a:link {
         color: #11A4F0;
       }
 

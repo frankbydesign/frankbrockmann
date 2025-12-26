@@ -37,6 +37,141 @@
         }
       }
     </script>
+    <style>
+      /* Link colors - scoped to main content, not nav */
+      .content-links a:link,
+      .main-content a:link {
+        color: #11A4F0;
+      }
+
+      /* ==========================================
+         PAGE STYLES - Clean Visual System
+         ========================================== */
+
+      /* Intro Section - Gray background */
+      .intro-section {
+        background: #f0f2f5;
+        padding: 2rem 0 2.5rem 0;
+      }
+
+      /* Main Content Area - White background */
+      .main-content {
+        background: #ffffff;
+        padding: 2rem 0;
+      }
+
+      /* h2 heading spacing */
+      h2 {
+        margin-top: 2.5rem;
+        margin-bottom: 1.25rem;
+      }
+
+      /* ==========================================
+         Two-Column Metadata Cards
+         ========================================== */
+      .metadata-cards {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 1.5rem;
+        margin: 2rem 0;
+      }
+
+      @media (max-width: 768px) {
+        .metadata-cards {
+          grid-template-columns: 1fr;
+        }
+      }
+
+      .card {
+        background: #f8fafc;
+        border: 1px solid #e2e8f0;
+        border-radius: 6px;
+        padding: 1.5rem;
+      }
+
+      .card-label {
+        font-size: 0.7rem;
+        font-weight: 700;
+        text-transform: uppercase;
+        letter-spacing: 0.1em;
+        color: #ffffff;
+        background: #2c5282;
+        padding: 0.6rem 1.5rem;
+        margin: -1.5rem -1.5rem 1rem -1.5rem;
+        border-radius: 5px 5px 0 0;
+      }
+
+      .card p {
+        font-size: 0.9rem;
+        line-height: 1.6;
+        color: #4a5568;
+        margin: 0 0 1rem 0;
+      }
+
+      .card p:last-child {
+        margin-bottom: 0;
+      }
+
+      /* Portfolio Dimensions definition list */
+      .dimensions-list {
+        margin: 0;
+      }
+
+      .dimensions-list dt {
+        font-size: 0.75rem;
+        font-weight: 700;
+        text-transform: uppercase;
+        letter-spacing: 0.05em;
+        color: #2c5282;
+        margin-top: 1rem;
+      }
+
+      .dimensions-list dt:first-child {
+        margin-top: 0;
+      }
+
+      .dimensions-list dd {
+        margin: 0.25rem 0 0 0;
+        font-size: 0.85rem;
+        line-height: 1.5;
+        color: #4a5568;
+      }
+
+      /* ==========================================
+         Content Section Spacing
+         ========================================== */
+      .content-section h2 {
+        margin-top: 2.5rem;
+        margin-bottom: 1.25rem;
+      }
+
+      .content-section p + p {
+        margin-top: 1rem;
+      }
+
+      /* ==========================================
+         Footer - Match Header Blue
+         ========================================== */
+      .site-footer {
+        background: #2c5282;
+        color: #ffffff;
+        padding: 1.5rem 0;
+        margin-top: 3rem;
+      }
+
+      .site-footer a {
+        color: #90cdf4;
+      }
+
+      .site-footer a:hover {
+        color: #ffffff;
+      }
+
+      .site-footer p {
+        color: #ffffff;
+        margin: 0;
+      }
+    </style>
 </head>
 <body class="bg-white text-[17px]">
     <a href="#main-content" class="sr-only focus:not-sr-only focus:absolute focus:top-0 focus:left-0 focus:z-50 focus:px-4 focus:py-2 focus:bg-navy-900 focus:text-white font-mono text-xs uppercase">Skip to main content</a>
@@ -67,23 +202,52 @@
         </div>
     </div>
 
-    <!-- Header Section -->
-    <section id="main-content" class="py-12 bg-[#E8E8E8] border-b border-slate-100">
+    <!-- Intro Section - Gray Background -->
+    <section id="main-content" class="intro-section border-b border-slate-200">
         <div class="max-w-4xl mx-auto px-6">
-            <div class="mb-6">
-                <h1 class="font-sans font-bold text-4xl text-navy-900 tracking-tight mb-2">Formative AI Scaffolding</h1>
-                <p class="text-lg text-slate-600 mb-1">A Framework for Studying How AI Shapes Adult Identity</p>
-                <p class="text-sm text-slate-500">Position Paper · December 2025</p>
+            <div class="flex items-start gap-6 flex-row-reverse">
+                <div class="w-64 h-64 bg-slate-200 border border-slate-300 rounded flex items-center justify-center flex-shrink-0">
+                    <span class="text-slate-400 text-sm text-center px-4">Paper image placeholder</span>
+                </div>
+                <div class="flex-1">
+                    <h1 class="font-sans font-bold text-4xl text-navy-900 tracking-tight mb-2">Formative AI Scaffolding</h1>
+                    <p class="text-lg text-slate-600 mb-1">A Framework for Studying How AI Shapes Adult Identity</p>
+                    <p class="text-sm text-slate-500 mb-4">Position Paper · December 2025</p>
+                    <p class="text-base text-slate-600 leading-relaxed mb-4">
+                        Millions of adults now use conversational AI to navigate major life decisions—career changes, relationship questions, geographic moves, and fundamental uncertainties about who they might become. This use is widespread and largely unstudied. Existing research frameworks, developed for K-12 educational contexts, don't fit: they assume predetermined curricula, bounded timeframes, and external assessment. Adults using AI for life decisions operate without these structures.
+                    </p>
+                    <p class="text-base text-slate-600 leading-relaxed">
+                        This position paper proposes formative AI scaffolding as a framework for studying this phenomenon. The core question: does AI interaction prepare people for membership in human communities, or does it substitute for the relationships that human development requires?
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Main Content Area - White Background -->
+    <section class="main-content">
+        <div class="max-w-4xl mx-auto px-6">
+            <div class="metadata-cards">
+              <div class="card">
+                <h4 class="card-label">About This Work</h4>
+                <p>This position paper proposes a new research framework for studying how sustained AI interaction shapes adult identity during major life transitions. It synthesizes findings from my applied work at F.E.A.S.T. and KĀʻEO into a set of research questions suitable for computational media and HCI inquiry.</p>
+              </div>
+              <div class="card">
+                <h4 class="card-label">CM Portfolio Dimensions</h4>
+                <dl class="dimensions-list">
+                  <dt>Technical</dt>
+                  <dd>Framework operationalization for HCI research, design feature analysis methodology, mixed-methods research design (longitudinal tracking, interaction log analysis, qualitative interviews)</dd>
+                  <dt>Creative</dt>
+                  <dd>Novel theoretical synthesis across educational psychology, developmental psychology, and computational media; "community criterion" as evaluative lens for AI design</dd>
+                  <dt>Interpretive</dt>
+                  <dd>Gap identification in existing literature, formative/habit-forming distinction, analysis of how design choices shape user trajectories toward or away from human connection</dd>
+                </dl>
+              </div>
             </div>
 
-            <div class="space-y-4 text-lg text-slate-600 leading-relaxed">
-                <p>
-                    Millions of adults now use conversational AI to navigate major life decisions—career changes, relationship questions, geographic moves, and fundamental uncertainties about who they might become. This use is widespread and largely unstudied. Existing research frameworks, developed for K-12 educational contexts, don't fit: they assume predetermined curricula, bounded timeframes, and external assessment. Adults using AI for life decisions operate without these structures.
-                </p>
-                <p>
-                    This position paper proposes formative AI scaffolding as a framework for studying this phenomenon. The core question: does AI interaction prepare people for membership in human communities, or does it substitute for the relationships that human development requires?
-                </p>
-                <p class="text-slate-600 mt-6">
+            <!-- Citation -->
+            <div class="mb-6 content-links">
+                <p class="text-slate-600">
                     Brockmann, F. (2025). <em>Formative AI Scaffolding: A Framework for Studying How Conversational AI Shapes Adult Decision-Making and Identity Formation.</em>
                 </p>
                 <a href="formative_ai_scaffolding.pdf" class="inline-flex items-center text-navy-800 hover:text-navy-900 transition-colors mt-2">
@@ -91,104 +255,58 @@
                     View Paper (PDF)
                 </a>
             </div>
-        </div>
-    </section>
 
-    <!-- CM Portfolio Dimensions -->
-    <section class="py-10 bg-white border-b border-slate-100">
-        <div class="max-w-4xl mx-auto px-6">
-            <h2 class="font-sans font-semibold text-2xl text-navy-900 tracking-tight mb-8">CM Portfolio Dimensions</h2>
+            <div class="content-section content-links">
+                <h2 class="font-sans font-semibold text-2xl text-navy-900 tracking-tight" style="margin-top: 0;">Research Directions</h2>
 
-            <dl class="space-y-6">
-                <div>
-                    <dt class="text-sm font-semibold text-slate-500 uppercase tracking-wide mb-2">Technical</dt>
-                    <dd class="text-slate-600">Framework operationalization for HCI research, design feature analysis methodology, mixed-methods research design (longitudinal tracking, interaction log analysis, qualitative interviews)</dd>
+                <p class="text-slate-600 mb-6">The framework opens several tractable research directions for computational media and HCI:</p>
+
+                <div class="overflow-x-auto">
+                    <table class="w-full text-left border-collapse">
+                        <thead>
+                            <tr class="border-b border-slate-200">
+                                <th class="py-3 pr-4 text-sm font-semibold text-slate-500 uppercase tracking-wide">Direction</th>
+                                <th class="py-3 text-sm font-semibold text-slate-500 uppercase tracking-wide">Question</th>
+                            </tr>
+                        </thead>
+                        <tbody class="text-slate-600">
+                            <tr class="border-b border-slate-100">
+                                <td class="py-4 pr-4 font-medium text-navy-900 align-top">Design Feature Analysis</td>
+                                <td class="py-4">How do specific features (conversational persistence, emotional disclosure handling, future visibility) correlate with movement toward or away from community?</td>
+                            </tr>
+                            <tr class="border-b border-slate-100">
+                                <td class="py-4 pr-4 font-medium text-navy-900 align-top">Trajectory Studies</td>
+                                <td class="py-4">Longitudinal tracking of adults using AI for life decisions—do they join communities, seek mentors, rebuild relationships?</td>
+                            </tr>
+                            <tr class="border-b border-slate-100">
+                                <td class="py-4 pr-4 font-medium text-navy-900 align-top">Transition Points</td>
+                                <td class="py-4">When do users move from AI support to human support? What facilitates or impedes these transitions?</td>
+                            </tr>
+                            <tr>
+                                <td class="py-4 pr-4 font-medium text-navy-900 align-top">Intervention Design</td>
+                                <td class="py-4">Can systems be designed to promote formative outcomes? What design hypotheses are worth testing?</td>
+                            </tr>
+                        </tbody>
+                    </table>
                 </div>
-                <div>
-                    <dt class="text-sm font-semibold text-slate-500 uppercase tracking-wide mb-2">Creative</dt>
-                    <dd class="text-slate-600">Novel theoretical synthesis across educational psychology, developmental psychology, and computational media; "community criterion" as evaluative lens for AI design</dd>
-                </div>
-                <div>
-                    <dt class="text-sm font-semibold text-slate-500 uppercase tracking-wide mb-2">Interpretive</dt>
-                    <dd class="text-slate-600">Gap identification in existing literature, formative/habit-forming distinction, analysis of how design choices shape user trajectories toward or away from human connection</dd>
-                </div>
-            </dl>
-        </div>
-    </section>
 
-    <!-- The Community Criterion -->
-    <section class="py-10 bg-[#E8E8E8] border-b border-slate-100">
-        <div class="max-w-4xl mx-auto px-6">
-            <h2 class="font-sans font-semibold text-2xl text-navy-900 tracking-tight mb-6">The Community Criterion</h2>
+                <h2 class="font-sans font-semibold text-2xl text-navy-900 tracking-tight">Connection to Portfolio</h2>
 
-            <div class="space-y-4 text-slate-600 leading-relaxed">
-                <p>
-                    Human development occurs in relational contexts. Identity emerges through participation in communities of practice, relationship, and purpose. The framework proposes that AI scaffolding is formative when it prepares people for this participation—and habit-forming when it substitutes for it.
-                </p>
-                <p>
-                    The distinction matters because design choices influence outcomes. Interface decisions, interaction patterns, and system architectures shape what users experience as possible. A system that periodically asks users what human communities they're preparing to join embeds a different orientation than one that optimizes purely for engagement.
+                <p class="text-slate-600 leading-relaxed">
+                    This framework emerged from observing how technology mediates human development in my other work. At F.E.A.S.T., I built computational scaffolding that sequences crisis information for caregivers—design choices about timing and sequence shape what actions feel possible. At KĀʻEO, I co-designed an AI Lab where the central principle is that humans ARE the loop, not checkpoints within an automated process. Both projects raised questions about when technology prepares people for human connection versus when it substitutes for what they actually need.
                 </p>
             </div>
         </div>
     </section>
 
-    <!-- Research Directions -->
-    <section class="py-10 bg-white border-b border-slate-100">
-        <div class="max-w-4xl mx-auto px-6">
-            <h2 class="font-sans font-semibold text-2xl text-navy-900 tracking-tight mb-6">Research Directions</h2>
-
-            <p class="text-slate-600 mb-6">The framework opens several tractable research directions for computational media and HCI:</p>
-
-            <div class="overflow-x-auto">
-                <table class="w-full text-left border-collapse">
-                    <thead>
-                        <tr class="border-b border-slate-200">
-                            <th class="py-3 pr-4 text-sm font-semibold text-slate-500 uppercase tracking-wide">Direction</th>
-                            <th class="py-3 text-sm font-semibold text-slate-500 uppercase tracking-wide">Question</th>
-                        </tr>
-                    </thead>
-                    <tbody class="text-slate-600">
-                        <tr class="border-b border-slate-100">
-                            <td class="py-4 pr-4 font-medium text-navy-900 align-top">Design Feature Analysis</td>
-                            <td class="py-4">How do specific features (conversational persistence, emotional disclosure handling, future visibility) correlate with movement toward or away from community?</td>
-                        </tr>
-                        <tr class="border-b border-slate-100">
-                            <td class="py-4 pr-4 font-medium text-navy-900 align-top">Trajectory Studies</td>
-                            <td class="py-4">Longitudinal tracking of adults using AI for life decisions—do they join communities, seek mentors, rebuild relationships?</td>
-                        </tr>
-                        <tr class="border-b border-slate-100">
-                            <td class="py-4 pr-4 font-medium text-navy-900 align-top">Transition Points</td>
-                            <td class="py-4">When do users move from AI support to human support? What facilitates or impedes these transitions?</td>
-                        </tr>
-                        <tr>
-                            <td class="py-4 pr-4 font-medium text-navy-900 align-top">Intervention Design</td>
-                            <td class="py-4">Can systems be designed to promote formative outcomes? What design hypotheses are worth testing?</td>
-                        </tr>
-                    </tbody>
-                </table>
-            </div>
-        </div>
-    </section>
-
-    <!-- Connection to Portfolio -->
-    <section class="py-10 bg-[#E8E8E8] border-b border-slate-100">
-        <div class="max-w-4xl mx-auto px-6">
-            <h2 class="font-sans font-semibold text-2xl text-navy-900 tracking-tight mb-6">Connection to Portfolio</h2>
-
-            <p class="text-slate-600 leading-relaxed">
-                This framework emerged from observing how technology mediates human development in my other work. At F.E.A.S.T., I built computational scaffolding that sequences crisis information for caregivers—design choices about timing and sequence shape what actions feel possible. At KĀʻEO, I co-designed an AI Lab where the central principle is that humans ARE the loop, not checkpoints within an automated process. Both projects raised questions about when technology prepares people for human connection versus when it substitutes for what they actually need.
-            </p>
-        </div>
-    </section>
-
-    <!-- Footer -->
-    <footer class="py-8 border-t border-slate-100 bg-white">
+    <!-- Footer - Matches Header Blue -->
+    <footer class="site-footer">
         <div class="max-w-4xl mx-auto px-6 flex items-center justify-between">
-            <a href="index.html" class="inline-flex items-center text-sm text-navy-800 hover:text-navy-900 transition-colors">
+            <a href="index.html" class="inline-flex items-center text-sm transition-colors">
                 <i data-lucide="arrow-left" class="w-4 h-4 mr-2"></i>
                 Back to Portfolio
             </a>
-            <p class="text-sm text-slate-400">&copy; 2025 Frank Brockmann</p>
+            <p class="text-sm">&copy; 2025 Frank Brockmann</p>
         </div>
     </footer>
 

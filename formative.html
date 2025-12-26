@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Formative AI Scaffolding: A Framework for Studying How AI Shapes Adult Identity. Position paper proposing research directions for understanding AI's role in adult development.">
+    <meta name="description" content="Formative AI Scaffolding: A Framework for Studying AI's Role in Adult Identity and Community Connection. Position paper proposing research directions for understanding AI's role in adult development.">
     <title>Formative AI Scaffolding - Frank Brockmann</title>
     <link rel="icon" type="image/svg+xml" href="favicon.svg">
 
@@ -39,14 +39,11 @@
     </script>
     <style>
       /* Link colors - scoped to main content, not nav */
-      .content-links a:link,
+      main a:link,
+      section a:link,
       .main-content a:link {
         color: #11A4F0;
       }
-
-      /* ==========================================
-         PAGE STYLES - Clean Visual System
-         ========================================== */
 
       /* Intro Section - Gray background */
       .intro-section {
@@ -66,9 +63,7 @@
         margin-bottom: 1.25rem;
       }
 
-      /* ==========================================
-         Two-Column Metadata Cards
-         ========================================== */
+      /* Two-Column Metadata Cards */
       .metadata-cards {
         display: grid;
         grid-template-columns: 1fr 1fr;
@@ -112,34 +107,7 @@
         margin-bottom: 0;
       }
 
-      /* Portfolio Dimensions definition list */
-      .dimensions-list {
-        margin: 0;
-      }
-
-      .dimensions-list dt {
-        font-size: 0.75rem;
-        font-weight: 700;
-        text-transform: uppercase;
-        letter-spacing: 0.05em;
-        color: #2c5282;
-        margin-top: 1rem;
-      }
-
-      .dimensions-list dt:first-child {
-        margin-top: 0;
-      }
-
-      .dimensions-list dd {
-        margin: 0.25rem 0 0 0;
-        font-size: 0.85rem;
-        line-height: 1.5;
-        color: #4a5568;
-      }
-
-      /* ==========================================
-         Content Section Spacing
-         ========================================== */
+      /* Content Section Spacing */
       .content-section h2 {
         margin-top: 2.5rem;
         margin-bottom: 1.25rem;
@@ -149,9 +117,7 @@
         margin-top: 1rem;
       }
 
-      /* ==========================================
-         Footer - Match Header Blue
-         ========================================== */
+      /* Footer - Match Header Blue */
       .site-footer {
         background: #2c5282;
         color: #ffffff;
@@ -191,10 +157,16 @@
         </div>
     </nav>
 
-    <!-- Main Content -->
-    <section id="main-content" class="main-content">
+    <!-- Breadcrumb -->
+    <div class="py-4 bg-white border-b border-slate-100">
         <div class="max-w-4xl mx-auto px-6">
-            <a href="index.html" class="text-navy-800 hover:text-navy-900 transition-colors">Portfolio</a>
+            <div class="flex items-center gap-2 text-sm font-mono">
+                <a href="index.html" class="text-navy-900 hover:text-navy-800 transition-colors">Portfolio</a>
+                <i data-lucide="chevron-right" class="w-4 h-4 text-slate-400"></i>
+                <span class="text-slate-500">Formative AI Scaffolding</span>
+            </div>
+        </div>
+    </div>
 
     <!-- Intro Section - Gray Background -->
     <section id="main-content" class="intro-section border-b border-slate-200">
@@ -205,59 +177,62 @@
                 </div>
                 <div class="flex-1">
                     <h1 class="font-sans font-bold text-4xl text-navy-900 tracking-tight mb-2">Formative AI Scaffolding</h1>
-                    <p class="text-lg text-slate-600 mb-1">A Framework for Studying How AI Shapes Adult Identity</p>
+                    <p class="text-lg text-slate-600 mb-1">A Framework for Studying AI's Role in Adult Identity and Community Connection</p>
                     <p class="text-sm text-slate-500 mb-4">Position Paper · December 2025</p>
                     <p class="text-base text-slate-600 leading-relaxed mb-4">
-                        This position paper proposes a new research framework for studying how sustained AI interaction shapes adult identity during major life transitions. It synthesizes findings from my applied work at F.E.A.S.T. and KĀʻEO into a set of research questions suitable for computational media and HCI inquiry.
+                        When does AI interaction prepare people for richer human connection, and when does it substitute for the relationships that human development requires?
                     </p>
                     <p class="text-base text-slate-600 leading-relaxed">
-                        The core question it presents: does AI interaction prepare people for connection in human communities, or does it act as a substitute for the relationships that human development requires?
+                        This paper proposes the <strong>community criterion</strong> as a way to distinguish between the two. AI scaffolding is formative when it moves people toward membership in human communities. It is habit-forming when the loop closes on itself: more conversation, more refinement, but no forward movement toward actual people.
                     </p>
                 </div>
             </div>
         </div>
     </section>
 
-            <h1 class="font-sans font-bold text-4xl text-navy-900 tracking-tight mb-2">Formative AI Scaffolding</h1>
+    <!-- Main Content Area - White Background -->
+    <section class="main-content">
+        <div class="max-w-4xl mx-auto px-6">
+            <div class="content-section">
+                <p class="text-slate-600 leading-relaxed">The distinction matters because millions of adults now use AI to navigate career changes, relationship questions, and fundamental uncertainties about who they might become. Existing research frameworks, developed for K-12 educational contexts, don't fit. They assume predetermined curricula, bounded timeframes, and external assessment. Adults using AI for life decisions operate without these structures.</p>
 
-            <p class="text-lg text-slate-600 mb-1">A Framework for Studying AI's Role in Adult Identity and Community Connection</p>
+                <h2 class="font-sans font-semibold text-2xl text-navy-900 tracking-tight">Paper Structure</h2>
 
-            <p class="text-sm text-slate-500 mb-6">Position Paper · December 2025</p>
+                <p class="text-slate-600 leading-relaxed mb-4">The paper proceeds in six sections:</p>
 
-            <p class="text-slate-600 leading-relaxed mb-4">When does AI interaction prepare people for richer human connection, and when does it substitute for the relationships that human development requires?</p>
+                <ol class="list-decimal list-inside text-slate-600 leading-relaxed space-y-2">
+                    <li><strong>Introduction</strong> establishes the phenomenon and the gap in existing research</li>
+                    <li><strong>AI Scaffolding in Educational Contexts</strong> reviews what we know and where that knowledge stops applying</li>
+                    <li><strong>The Gap</strong> examines how adults actually use AI for life decisions and why educational frameworks don't fit</li>
+                    <li><strong>The Framework</strong> defines formative AI scaffolding and the community criterion</li>
+                    <li><strong>Research Directions</strong> outlines tractable questions for computational media and HCI researchers</li>
+                    <li><strong>Conclusion</strong> addresses the stakes of getting this right</li>
+                </ol>
 
-            <p class="text-slate-600 leading-relaxed mb-4">This paper proposes the <strong>community criterion</strong> as a way to distinguish between the two. AI scaffolding is formative when it moves people toward membership in human communities. It is habit-forming when the loop closes on itself: more conversation, more refinement, but no forward movement toward actual people.</p>
+                <h2 class="font-sans font-semibold text-2xl text-navy-900 tracking-tight">Connection to Portfolio</h2>
 
-            <p class="text-slate-600 leading-relaxed mb-8">The distinction matters because millions of adults now use AI to navigate career changes, relationship questions, and fundamental uncertainties about who they might become. Existing research frameworks, developed for K-12 educational contexts, don't fit. They assume predetermined curricula, bounded timeframes, and external assessment. Adults using AI for life decisions operate without these structures.</p>
+                <p class="text-slate-600 leading-relaxed">This framework emerged from questions raised by my other work. At F.E.A.S.T., I built systems that sequence crisis information for caregivers based on what they can absorb at each stage. Design choices about timing shape what actions feel possible. At KĀʻEO, I co-designed an AI Lab where humans ARE the loop, not checkpoints in an automated process. Both projects made visible how computational systems mediate human decision-making in high-stakes contexts.</p>
 
-            <h2 class="font-sans font-semibold text-2xl text-navy-900 tracking-tight mb-4">Paper Structure</h2>
+                <p class="text-slate-600 leading-relaxed">The Formative AI Scaffolding framework turns that observation into a research program: studying how design choices in AI systems influence whether users move toward human community or away from it.</p>
+            </div>
+        </div>
+    </section>
 
-            <p class="text-slate-600 leading-relaxed mb-4">The paper proceeds in six sections:</p>
+    <!-- Materials Section -->
+    <section class="py-10 bg-white border-b border-slate-100">
+        <div class="max-w-4xl mx-auto px-6">
+            <h2 class="font-sans font-semibold text-2xl text-navy-900 tracking-tight mb-4" style="margin-top: 0;">Materials</h2>
 
-            <ol class="list-decimal list-inside text-slate-600 leading-relaxed mb-8 space-y-2">
-              <li><strong>Introduction</strong> establishes the phenomenon and the gap in existing research</li>
-              <li><strong>AI Scaffolding in Educational Contexts</strong> reviews what we know and where that knowledge stops applying</li>
-              <li><strong>The Gap</strong> examines how adults actually use AI for life decisions and why educational frameworks don't fit</li>
-              <li><strong>The Framework</strong> defines formative AI scaffolding and the community criterion</li>
-              <li><strong>Research Directions</strong> outlines tractable questions for computational media and HCI researchers</li>
-              <li><strong>Conclusion</strong> addresses the stakes of getting this right</li>
-            </ol>
+            <p class="text-slate-600 leading-relaxed mb-6"><strong>Status:</strong> Draft complete. Preparing for arXiv submission, December 2025.</p>
 
-            <h2 class="font-sans font-semibold text-2xl text-navy-900 tracking-tight mb-4">Connection to Portfolio</h2>
-
-            <p class="text-slate-600 leading-relaxed mb-4">This framework emerged from questions raised by my other work. At F.E.A.S.T., I built systems that sequence crisis information for caregivers based on what they can absorb at each stage. Design choices about timing shape what actions feel possible. At KĀʻEO, I co-designed an AI Lab where humans ARE the loop, not checkpoints in an automated process. Both projects made visible how computational systems mediate human decision-making in high-stakes contexts.</p>
-
-            <p class="text-slate-600 leading-relaxed mb-8">The Formative AI Scaffolding framework turns that observation into a research program: studying how design choices in AI systems influence whether users move toward human community or away from it.</p>
-
-            <h2 class="font-sans font-semibold text-2xl text-navy-900 tracking-tight mb-4">Materials</h2>
-
-            <p class="text-slate-600 leading-relaxed mb-4"><strong>Status:</strong> Draft complete. Preparing for arXiv submission, December 2025.</p>
-
-            <ul class="text-slate-600 leading-relaxed mb-8 space-y-2">
-              <li>Brockmann, F. (2025). <em>Formative AI Scaffolding: A Framework for Studying AI's Role in Adult Identity and Community Connection.</em> <a href="formative_ai_scaffolding.pdf" class="text-navy-800 hover:text-navy-900 underline transition-colors">View Paper (PDF)</a></li>
+            <ul class="space-y-3">
+                <li>
+                    <a href="formative_ai_scaffolding.pdf" class="inline-flex items-center text-navy-800 hover:text-navy-900 transition-colors">
+                        <i data-lucide="file-text" class="w-4 h-4 mr-2"></i>
+                        Formative AI Scaffolding: A Framework for Studying AI's Role in Adult Identity and Community Connection (PDF)
+                    </a>
+                </li>
             </ul>
-
-            <a href="index.html" class="text-navy-800 hover:text-navy-900 transition-colors">Back to Portfolio</a>
         </div>
     </section>
 

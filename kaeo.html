@@ -120,6 +120,11 @@
         border-radius: 5px 5px 0 0;
       }
 
+      .card-label-gold {
+        background: #F1B521;
+        color: #003C6C;
+      }
+
       .card p {
         font-size: 0.9rem;
         line-height: 1.6;
@@ -325,6 +330,9 @@
                     <li><a href="AI_Lab.3 Guidelines for Developer-Focused Interpretive Briefs.pdf" class="text-navy-800 hover:text-navy-900 underline transition-colors">AI Lab Guidelines for Interpretive Briefs (PDF)</a></li>
                   </ul>
                 </div>
+                <div class="mt-4 pt-4 border-t border-slate-200">
+                  <a href="#related-work" class="text-navy-800 hover:text-navy-900 underline transition-colors">Related Projects</a>
+                </div>
               </div>
             </div>
 
@@ -376,22 +384,24 @@
     </section>
 
     <!-- Related Work Section -->
-    <section class="py-10 bg-white border-b border-slate-100">
+    <section id="related-work" class="py-10 bg-white border-b border-slate-100">
         <div class="max-w-4xl mx-auto px-6">
             <h2 class="font-sans font-semibold text-2xl text-navy-900 tracking-tight mb-8">Related Work</h2>
 
-            <!-- Hawaiian Font Analysis Project -->
-            <div class="mb-10">
-                <h3 class="text-sm font-semibold text-slate-500 uppercase tracking-wide mb-4">Hawaiian Font Analysis Project</h3>
-                <p class="text-slate-600 mb-3">Tools for analyzing whether fonts correctly render Hawaiian diacritical marks (ʻokina and kahakō) across different systems and browsers.</p>
-                <a href="https://github.com/frankbydesign/hawaiian-font-catalog-backend" target="_blank" rel="noopener" class="text-navy-800 hover:text-navy-900 underline transition-colors">View Repository (GitHub)</a>
-            </div>
+            <div class="metadata-cards">
+              <!-- Hawaiian Font Analysis Project -->
+              <div class="card">
+                <h4 class="card-label card-label-gold">Hawaiian Font Analysis Project</h4>
+                <p>Tools for analyzing whether fonts correctly render Hawaiian diacritical marks (ʻokina and kahakō) across different systems and browsers.</p>
+                <p><a href="https://github.com/frankbydesign/hawaiian-font-catalog-backend" target="_blank" rel="noopener" class="text-navy-800 hover:text-navy-900 underline transition-colors">View Repository (GitHub)</a></p>
+              </div>
 
-            <!-- Hawaiian Diacriticals Tool -->
-            <div class="mb-10">
-                <h3 class="text-sm font-semibold text-slate-500 uppercase tracking-wide mb-4">Hawaiian Diacriticals Tool</h3>
-                <p class="text-slate-600 mb-3">A utility for converting incorrectly encoded Hawaiian text to proper Unicode characters.</p>
-                <a href="https://frankbydesign.github.io/hawaiian-input/" target="_blank" rel="noopener" class="text-navy-800 hover:text-navy-900 underline transition-colors">View Demo</a> | <a href="https://github.com/frankbydesign/hawaiian-input" target="_blank" rel="noopener" class="text-navy-800 hover:text-navy-900 underline transition-colors">View Repository (GitHub)</a>
+              <!-- Hawaiian Diacriticals Tool -->
+              <div class="card">
+                <h4 class="card-label card-label-gold">Hawaiian Diacriticals Tool</h4>
+                <p>A utility for converting incorrectly encoded Hawaiian text to proper Unicode characters.</p>
+                <p><a href="https://frankbydesign.github.io/hawaiian-input/" target="_blank" rel="noopener" class="text-navy-800 hover:text-navy-900 underline transition-colors">View Demo</a> | <a href="https://github.com/frankbydesign/hawaiian-input" target="_blank" rel="noopener" class="text-navy-800 hover:text-navy-900 underline transition-colors">View Repository (GitHub)</a></p>
+              </div>
             </div>
         </div>
     </section>

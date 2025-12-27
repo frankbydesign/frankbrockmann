@@ -303,19 +303,16 @@
                     F.E.A.S.T.'s clinical team designed a <a href="https://feast-ed.org/feast-30-days/" target="_blank" rel="noopener" class="text-navy-800 hover:text-navy-900 underline">30-day curriculum</a> that scaffolds caregivers through early crisis, sequencing information based on what parents can absorb at each stage. My role was building and maintaining the delivery infrastructure (first in Mailchimp, then rebuilt in Salesforce with parallel static web/PDF versions). I made the technical decisions: timing, flow logic, segmentation, engagement tracking for both English and Spanish versions of the program.
                 </p>
                 <p class="text-slate-600 leading-relaxed">
-                    Building this system gave me direct insight into how timed information delivery shapes <em>the user experience for community members in crisis</em>. It's computational scaffolding that predates the AI systems I want to study.
+                    Building this system gave me direct insight into how timed information delivery shapes the user experience for community members in crisis. It's computational scaffolding that predates the AI systems I want to study.
                 </p>
             </div>
 
-            <!-- Timeline/Phases -->
+            <!-- Timeline/Phases - Two Column Layout -->
             <div class="mb-8">
                 <h3 class="text-sm font-semibold text-slate-500 uppercase tracking-wide mb-4">The 30-Day Arc</h3>
-                <div class="relative max-w-sm">
-                    <!-- SVG Arc connecting the boxes -->
-                    <svg class="absolute left-0 top-0 h-full pointer-events-none" width="24" height="100%" viewBox="0 0 24 100" preserveAspectRatio="none" style="z-index: 0;">
-                        <path d="M 12 2 Q -20 50 12 98" stroke="#003C6C" stroke-width="2" fill="none" opacity="0.3"/>
-                    </svg>
-                    <div class="space-y-3 relative" style="z-index: 1;">
+                <div class="flex gap-6 max-w-xl">
+                    <!-- Left Column: Day Boxes -->
+                    <div class="flex-1 space-y-3">
                         <div class="flex items-start gap-4 p-4 bg-white rounded-lg border border-navy-800">
                             <span class="font-mono text-sm font-semibold text-navy-800 whitespace-nowrap">Days 1–3</span>
                             <div>
@@ -372,6 +369,12 @@
                                 <p class="text-sm text-slate-500 mt-0.5">Relapse prevention, moving forward</p>
                             </div>
                         </div>
+                    </div>
+                    <!-- Right Column: Arc SVG -->
+                    <div class="flex-shrink-0 w-16 flex items-center justify-center">
+                        <svg class="h-full w-full" viewBox="0 0 60 400" preserveAspectRatio="none" style="height: 100%; min-height: 600px;">
+                            <path d="M 8 10 Q 55 200 8 390" stroke="#F1B521" stroke-width="4" fill="none" stroke-linecap="round"/>
+                        </svg>
                     </div>
                 </div>
             </div>

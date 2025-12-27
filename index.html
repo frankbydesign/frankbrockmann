@@ -87,14 +87,18 @@
         </div>
     </nav>
 
-    <!-- Intro Section -->
+    <!-- Intro Section
+         Accessibility: DOM order follows logical reading order for screen readers:
+         1. Header, 2. Subtitle, 3. Intro paragraphs, 4. Photo/caption/CV link.
+         CSS flexbox order properties maintain visual layout (photo on right). -->
     <section id="main-content" class="py-12 bg-white border-b border-slate-100">
         <div class="max-w-4xl mx-auto px-6">
             <div class="flex flex-col md:flex-row md:items-start md:gap-8">
-                <!-- Intro Text (Left Column ~65-70%) -->
+                <!-- Text content first in DOM for screen reader accessibility.
+                     CSS order-2 places it visually second on mobile; md:order-1 places it first (left) on desktop. -->
                 <div class="flex-1 md:w-[65%] order-2 md:order-1">
                     <h1 class="font-sans font-bold text-4xl text-navy-900 tracking-tight mb-2">
-                        UC Santa Cruz Computational Media
+                        UCSC Computational Media
                     </h1>
                     <p class="text-lg text-slate-500 mb-8">PhD Application Portfolio · Fall 2026</p>
 
@@ -111,9 +115,10 @@
                     </div>
                 </div>
 
-                <!-- Headshot (Right Column ~30-35%) -->
-                <div class="flex-shrink-0 mb-6 md:mb-0 flex flex-col items-center order-1 md:order-2 md:w-[30%]">
-                    <img src="assets/brockmann_pic.png" alt="Frank Brockmann" class="w-40 h-40 rounded-full object-cover border-4 border-gold-500">
+                <!-- Photo section last in DOM for accessibility.
+                     CSS order-1 places it visually first on mobile; md:order-2 places it second (right) on desktop. -->
+                <div class="flex-shrink-0 mb-6 md:mb-0 flex flex-col items-center order-1 md:order-2 md:w-[30%] md:mt-12">
+                    <img src="assets/brockmann_pic.png" alt="Frank Brockmann" class="w-40 h-40 rounded-full object-cover">
                     <p class="mt-3 font-sans font-semibold text-navy-900 text-center">Frank Brockmann</p>
                     <p class="mt-2 text-center">
                         <a href="assets/brockmann_cv.pdf" class="text-navy-800 hover:text-navy-900 underline transition-colors inline-flex items-center gap-1.5" target="_blank" rel="noopener">
@@ -172,7 +177,7 @@
         <div class="max-w-4xl mx-auto px-6">
             <h2 class="font-sans font-semibold text-2xl text-navy-900 tracking-tight mb-4">Publications / Presentations</h2>
 
-            <div class="max-w-[75%]">
+            <div class="max-w-[75%] font-light">
             <!-- Submitted -->
             <div class="mb-10">
                 <h3 class="text-sm font-semibold text-slate-500 uppercase tracking-wide mb-4">Conferences (Submitted)</h3>
@@ -248,7 +253,7 @@
     <!-- Background Section -->
     <section id="background" class="py-10 bg-[#E8E8E8] border-b border-slate-100">
         <div class="max-w-4xl mx-auto px-6">
-            <h2 class="font-sans font-semibold text-2xl text-navy-900 tracking-tight mb-8">Background & Education</h2>
+            <h2 class="font-sans font-semibold text-2xl text-navy-900 tracking-tight mb-8">Background / Education</h2>
 
             <p class="mb-8">
                 <a href="assets/brockmann_cv.pdf" class="text-navy-800 hover:text-navy-900 underline transition-colors inline-flex items-center gap-1.5" target="_blank" rel="noopener">

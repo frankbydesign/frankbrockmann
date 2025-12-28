@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Site Notes: Information about how this portfolio site was built, including design decisions, typography, accessibility, and technical implementation.">
+    <title>Site Notes - Frank Brockmann</title>
+    <link rel="icon" type="image/svg+xml" href="assets/favicon-project.svg">
+
+    <!-- Fonts: Readex Pro & Source Code Pro -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Readex+Pro:wght@300;400;500;600;700&family=Source+Code+Pro:wght@400;500;600&display=swap" rel="stylesheet">
+
+    <!-- Tailwind CSS (CDN for static build) -->
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- Icons (Lucide) -->
+    <script src="https://unpkg.com/lucide@latest"></script>
+
+    <!-- CM Design Tokens Config -->
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              navy: { 50: '#EFF6FF', 800: '#005599', 900: '#003C6C', 950: '#002A4D' },
+              gold: { 400: '#FECB00', 500: '#F1B521', 600: '#EAB308', 700: '#A16207' },
+              slate: { 50: '#F8FAFC', 100: '#F1F5F9', 200: '#E2E8F0', 500: '#64748B', 600: '#475569', 900: '#0F172A' }
+            },
+            fontFamily: {
+              sans: ['"Readex Pro"', 'sans-serif'],
+              mono: ['"Source Code Pro"', 'monospace'],
+            },
+            letterSpacing: { tight: '-0.025em', widest: '0.1em' }
+          }
+        }
+      }
+    </script>
+    <style>
+      /* Link colors - scoped to main content, not nav */
+      main a, section a {
+        color: #005599;
+        text-decoration: underline;
+      }
+
+      main a:hover, section a:hover {
+        color: #003C6C;
+      }
+
+      /* Body text - lighter font weight for consistency with index.html */
+      main p, section p {
+        font-weight: 300;
+      }
+
+      /* Bold text - heavier weight for visual distinction */
+      main strong, section strong {
+        font-weight: 700;
+      }
+
+      /* Main Content Area - White background */
+      .main-content {
+        background: #ffffff;
+        padding: 2rem 0;
+      }
+
+      /* Content Section Spacing */
+      .content-section p + p {
+        margin-top: 1rem;
+      }
+
+      /* Footer - Match Nav Bar (navy-900) */
+      .site-footer {
+        background: #003C6C;
+        color: #ffffff;
+        padding: 1.5rem 0;
+        margin-top: 3rem;
+      }
+
+      .site-footer a {
+        color: #ffffff;
+      }
+
+      .site-footer a:hover {
+        color: #F1B521;
+      }
+
+      .site-footer p {
+        color: #ffffff;
+        margin: 0;
+      }
+    </style>
+</head>
+<body class="bg-white text-[17px]">
+    <a href="#main-content" class="sr-only focus:not-sr-only focus:absolute focus:top-0 focus:left-0 focus:z-50 focus:px-4 focus:py-2 focus:bg-navy-900 focus:text-white font-mono text-xs uppercase">Skip to main content</a>
+
+    <!-- Navigation -->
+    <nav class="sticky top-0 z-50 bg-navy-900/95 backdrop-blur-md border-b-[3px] border-[#F1B521]" role="navigation" aria-label="Main navigation">
+        <div class="max-w-4xl mx-auto px-6 h-14 flex items-center justify-between">
+            <a href="index.html" class="font-sans font-semibold text-white text-lg tracking-tight hover:text-gold-500 transition-colors">
+                Frank Brockmann
+            </a>
+            <div class="flex gap-6">
+                <a href="index.html#projects" class="text-sm text-slate-200 hover:text-gold-500 transition-colors">Portfolio</a>
+                <a href="index.html#publications" class="text-sm text-slate-200 hover:text-gold-500 transition-colors">Publications</a>
+                <a href="index.html#background" class="text-sm text-slate-200 hover:text-gold-500 transition-colors">Background</a>
+                <a href="index.html#contact" class="text-sm text-slate-200 hover:text-gold-500 transition-colors">Contact</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Breadcrumb -->
+    <div class="py-4 bg-white border-b border-slate-100">
+        <div class="max-w-4xl mx-auto px-6">
+            <div class="flex items-center gap-2 text-sm font-mono">
+                <a href="index.html" class="text-navy-900 hover:text-navy-800 transition-colors">Portfolio</a>
+                <i data-lucide="chevron-right" class="w-4 h-4 text-slate-400"></i>
+                <span class="text-slate-500">Site Notes</span>
+            </div>
+        </div>
+    </div>
+
+    <!-- Main Content Area - White Background -->
+    <section id="main-content" class="main-content">
+        <div class="max-w-4xl mx-auto px-6">
+            <h1 class="font-sans font-bold text-4xl text-navy-900 tracking-tight mb-8">Site Notes</h1>
+
+            <div class="content-section">
+                <p class="text-slate-600 leading-relaxed"><strong>About This Site</strong></p>
+
+                <p class="text-slate-600 leading-relaxed">This site was built specifically for my PhD application. It's also an example of the kind of work I do: designing information architecture for specific audiences, making deliberate choices about accessibility and presentation, and shipping functional systems without unnecessary complexity.</p>
+
+                <p class="text-slate-600 leading-relaxed mt-8"><strong>Design</strong></p>
+
+                <p class="text-slate-600 leading-relaxed">The visual language borrows from UCSC's brand identity: navy (#003C6C) and gold (#F1B521), while extending it with lighter variants for backgrounds and accents. I avoided dense bullet lists and heavy formatting in favor of prose that reads more like writing and less like a slide deck.</p>
+
+                <p class="text-slate-600 leading-relaxed mt-8"><strong>Typography</strong></p>
+
+                <p class="text-slate-600 leading-relaxed">The primary typeface is Readex Pro, the world-script expansion of Lexend. Lexend was designed by Bonnie Shaver-Troup and Thomas Jockin specifically to improve reading fluency, and studies found it helps readers with dyslexia and reduces visual stress for everyone. Readex Pro extends that work to Arabic script (added by Nadine Chahine) while maintaining the clean, geometric letterforms that make it readable at any size.</p>
+
+                <p class="text-slate-600 leading-relaxed">It also renders Hawaiian diacritical marks correctly—the ʻokina and kahakō that are essential to Hawaiian language. Given my work with the Hawaiian language community, that matters to me.</p>
+
+                <p class="text-slate-600 leading-relaxed">Source Code Pro handles the few monospace elements I used, such as the breadcrumb navigation.</p>
+
+                <p class="text-slate-600 leading-relaxed">I chose Readex Pro not just for aesthetics but because accessibility research backs it. For a portfolio about technology in service of community, the typeface should embody that principle.</p>
+
+                <p class="text-slate-600 leading-relaxed mt-8"><strong>Accessibility</strong></p>
+
+                <p class="text-slate-600 leading-relaxed">The site targets WCAG AAA compliance where possible. This includes: color contrast ratios above 7:1 for body text, skip links for keyboard navigation, semantic HTML structure, and alt text for images. I tested with WAVE and keyboard-only navigation. The gold-on-navy and navy-on-gold combinations were specifically chosen to pass contrast requirements.</p>
+
+                <p class="text-slate-600 leading-relaxed mt-8"><strong>Technical</strong></p>
+
+                <p class="text-slate-600 leading-relaxed">Static HTML with Tailwind CSS (via CDN) and Lucide icons, hosted on GitHub Pages. No local build step, no bundler, no framework beyond utility CSS. This was intentional, because I wanted something I could edit directly and that would remain stable without maintenance or the hassles of standard web hosting. GitHub Pages seemed like the right choice, as the simplicity of it is the point.</p>
+
+                <p class="text-slate-600 leading-relaxed mt-8"><strong>Process</strong></p>
+
+                <p class="text-slate-600 leading-relaxed">I built this site with automated assistance from Claude Code, along with other AI tools for external code review, with some direct modifications done manually. The design decisions, content, draft revisions and editorial voice are mine, but AI helped with CSS implementation, accessibility testing, and iterating through the various revisions. This felt appropriate given that my research interest is how people use AI as a collaborative tool; in doing so, this site becomes one of my design cases.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer - Matches Header Blue -->
+    <footer class="site-footer border-t-[3px] border-[#F1B521]">
+        <div class="max-w-4xl mx-auto px-6 flex items-center justify-between">
+            <a href="index.html" class="inline-flex items-center text-sm transition-colors">
+                <i data-lucide="arrow-left" class="w-4 h-4 mr-2"></i>
+                Back to Portfolio
+            </a>
+            <div class="flex items-center gap-4">
+                <a href="sitenotes.html" class="text-sm transition-colors">Site Notes</a>
+                <p class="text-sm">&copy; 2025–2026 Frank Brockmann</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Initialize Lucide Icons -->
+    <script>
+        lucide.createIcons();
+    </script>
+</body>
+</html>

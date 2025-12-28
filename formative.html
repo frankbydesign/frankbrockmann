@@ -161,11 +161,26 @@
             <a href="index.html" class="font-sans font-semibold text-white text-lg tracking-tight hover:text-gold-500 transition-colors">
                 Frank Brockmann
             </a>
-            <div class="flex gap-6">
+            <!-- Mobile hamburger button -->
+            <button class="md:hidden text-white hover:text-gold-500 transition-colors" id="mobile-menu-toggle" aria-label="Toggle menu" aria-expanded="false">
+                <i data-lucide="menu" class="w-6 h-6" id="menu-icon"></i>
+                <i data-lucide="x" class="w-6 h-6 hidden" id="close-icon"></i>
+            </button>
+            <!-- Desktop nav -->
+            <div class="hidden md:flex gap-6">
                 <a href="index.html#projects" class="text-sm text-slate-200 hover:text-gold-500 transition-colors">Portfolio</a>
                 <a href="index.html#publications" class="text-sm text-slate-200 hover:text-gold-500 transition-colors">Publications</a>
                 <a href="index.html#background" class="text-sm text-slate-200 hover:text-gold-500 transition-colors">Background</a>
                 <a href="index.html#contact" class="text-sm text-slate-200 hover:text-gold-500 transition-colors">Contact</a>
+            </div>
+        </div>
+        <!-- Mobile nav panel -->
+        <div id="mobile-menu" class="hidden md:hidden bg-navy-900 border-t border-navy-800">
+            <div class="max-w-4xl mx-auto px-6 py-4 flex flex-col gap-4">
+                <a href="index.html#projects" class="text-base text-slate-200 hover:text-gold-500 transition-colors py-2">Portfolio</a>
+                <a href="index.html#publications" class="text-base text-slate-200 hover:text-gold-500 transition-colors py-2">Publications</a>
+                <a href="index.html#background" class="text-base text-slate-200 hover:text-gold-500 transition-colors py-2">Background</a>
+                <a href="index.html#contact" class="text-base text-slate-200 hover:text-gold-500 transition-colors py-2">Contact</a>
             </div>
         </div>
     </nav>
@@ -184,8 +199,8 @@
     <!-- Intro Section - Gray Background -->
     <section id="main-content" class="intro-section border-b border-slate-200">
         <div class="max-w-4xl mx-auto px-6">
-            <div class="flex items-start gap-6 flex-row-reverse">
-                <img src="assets/logo_two-papers.png" alt="Formative AI Scaffolding papers" class="w-64 h-64 object-contain flex-shrink-0">
+            <div class="flex flex-col md:flex-row-reverse items-center md:items-start gap-6">
+                <img src="assets/logo_two-papers.png" alt="Formative AI Scaffolding papers" class="w-48 md:w-64 h-48 md:h-64 object-contain flex-shrink-0">
                 <div class="flex-1">
                     <h1 class="font-sans font-bold text-4xl text-navy-900 tracking-tight mb-2">Formative AI Scaffolding</h1>
                     <p class="text-lg text-slate-600 mb-6">Position papers on AI's role in identity, community, and organizational adoption</p>
@@ -239,12 +254,12 @@
 
     <!-- Footer - Matches Header Blue -->
     <footer class="site-footer border-t-[3px] border-[#F1B521]">
-        <div class="max-w-4xl mx-auto px-6 flex items-center justify-between">
+        <div class="max-w-4xl mx-auto px-6 flex flex-col md:flex-row items-center justify-between gap-4 md:gap-0">
             <a href="index.html" class="inline-flex items-center text-sm transition-colors">
                 <i data-lucide="arrow-left" class="w-4 h-4 mr-2"></i>
                 Back to Portfolio
             </a>
-            <div class="flex items-center gap-4">
+            <div class="flex flex-col md:flex-row items-center gap-2 md:gap-4">
                 <a href="sitenotes.html" class="text-sm transition-colors">Site Notes</a>
                 <p class="text-sm">&copy; 2025–2026 Frank Brockmann</p>
             </div>
@@ -254,6 +269,32 @@
     <!-- Initialize Lucide Icons -->
     <script>
         lucide.createIcons();
+    </script>
+
+    <!-- Mobile menu toggle -->
+    <script>
+        const toggle = document.getElementById('mobile-menu-toggle');
+        const menu = document.getElementById('mobile-menu');
+        const menuIcon = document.getElementById('menu-icon');
+        const closeIcon = document.getElementById('close-icon');
+
+        toggle.addEventListener('click', () => {
+            const isOpen = !menu.classList.contains('hidden');
+            menu.classList.toggle('hidden');
+            menuIcon.classList.toggle('hidden');
+            closeIcon.classList.toggle('hidden');
+            toggle.setAttribute('aria-expanded', !isOpen);
+        });
+
+        // Close menu when clicking a link
+        menu.querySelectorAll('a').forEach(link => {
+            link.addEventListener('click', () => {
+                menu.classList.add('hidden');
+                menuIcon.classList.remove('hidden');
+                closeIcon.classList.add('hidden');
+                toggle.setAttribute('aria-expanded', 'false');
+            });
+        });
     </script>
 </body>
 </html>

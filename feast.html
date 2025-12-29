@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="F.E.A.S.T.: Technology Infrastructure for Caregiver Support. Systems that connect families to evidence-based eating disorder resources and peer support.">
-    <title>F.E.A.S.T. - Frank Brockmann</title>
+    <title>F.E.A.S.T. Caregiver Support Infrastructure | Frank Brockmann Portfolio</title>
     <link rel="icon" type="image/svg+xml" href="assets/favicon-project.svg">
 
     <!-- Fonts: Readex Pro & Source Code Pro -->
@@ -215,6 +215,30 @@
       .site-footer p {
         color: #ffffff;
         margin: 0;
+      }
+
+      /* FEAST 30 Days buttons - keyboard accessible hover states */
+      .feast-btn-primary {
+        background: #003C6C;
+        color: #ffffff;
+        text-decoration: none;
+      }
+      .feast-btn-primary:hover,
+      .feast-btn-primary:focus {
+        background: #F1B521;
+        color: #003C6C;
+      }
+
+      .feast-btn-secondary {
+        background: #ffffff;
+        color: #003C6C;
+        border: 2px solid #003C6C;
+        text-decoration: none;
+      }
+      .feast-btn-secondary:hover,
+      .feast-btn-secondary:focus {
+        background: #F1B521;
+        border-color: #F1B521;
       }
     </style>
 </head>
@@ -433,7 +457,7 @@
                     </div>
                     <!-- Right Column: Arc SVG -->
                     <div class="flex-shrink-0 w-16 flex items-center justify-center">
-                        <svg class="h-full w-full" viewBox="0 0 60 400" preserveAspectRatio="none" style="height: 100%; min-height: 600px;">
+                        <svg class="h-full w-full" viewBox="0 0 60 400" preserveAspectRatio="none" style="height: 100%; min-height: 600px;" aria-hidden="true">
                             <path d="M 8 10 Q 55 200 8 390" stroke="#F1B521" stroke-width="4" fill="none" stroke-linecap="round"/>
                         </svg>
                     </div>
@@ -450,12 +474,12 @@
 
             <!-- Links -->
             <div class="flex flex-wrap gap-4">
-                <a href="https://info.feast-ed.org/l/1069002/2024-07-16/3mbf2s" target="_blank" rel="noopener" class="inline-flex items-center px-4 py-2 rounded transition-colors no-underline" style="background: #003C6C; color: #ffffff; text-decoration: none;" onmouseover="this.style.background='#F1B521'; this.style.color='#003C6C'" onmouseout="this.style.background='#003C6C'; this.style.color='#ffffff'" aria-label="View All 30 Days in English (opens in new tab)">
+                <a href="https://info.feast-ed.org/l/1069002/2024-07-16/3mbf2s" target="_blank" rel="noopener" class="feast-btn-primary inline-flex items-center px-4 py-2 rounded transition-colors no-underline" aria-label="View All 30 Days in English (opens in new tab)">
                     <i data-lucide="list" class="w-4 h-4 mr-2" aria-hidden="true"></i>
                     All 30 Days (English)
                     <i data-lucide="external-link" class="w-3.5 h-3.5 ml-2" aria-hidden="true"></i>
                 </a>
-                <a href="https://info.feast-ed.org/FEAST30DayMenuSpanish" target="_blank" rel="noopener" class="inline-flex items-center px-4 py-2 rounded transition-colors no-underline" style="background: #ffffff; color: #003C6C; text-decoration: none; border: 2px solid #003C6C;" onmouseover="this.style.background='#F1B521'; this.style.borderColor='#F1B521'" onmouseout="this.style.background='#ffffff'; this.style.borderColor='#003C6C'" aria-label="View All 30 Days in Spanish (opens in new tab)">
+                <a href="https://info.feast-ed.org/FEAST30DayMenuSpanish" target="_blank" rel="noopener" class="feast-btn-secondary inline-flex items-center px-4 py-2 rounded transition-colors no-underline" aria-label="View All 30 Days in Spanish (opens in new tab)">
                     <i data-lucide="list" class="w-4 h-4 mr-2" aria-hidden="true"></i>
                     All 30 Days (Spanish)
                     <i data-lucide="external-link" class="w-3.5 h-3.5 ml-2" aria-hidden="true"></i>
@@ -472,12 +496,12 @@
     <!-- Footer - Matches Header Blue -->
     <footer class="site-footer border-t-[3px] border-[#F1B521]">
         <div class="max-w-4xl mx-auto px-6 flex flex-col md:flex-row items-center justify-between gap-4 md:gap-0">
-            <a href="https://frankbydesign.github.io/frankbrockmann/index.html#projects" class="inline-flex items-center text-sm transition-colors">
+            <a href="https://frankbydesign.github.io/frankbrockmann/index.html#projects" aria-label="Back to Portfolio" class="inline-flex items-center text-sm transition-colors">
                 <i data-lucide="arrow-left" class="w-4 h-4 mr-2" aria-hidden="true"></i>
                 Back to Portfolio
             </a>
             <div class="flex flex-col md:flex-row items-center gap-2 md:gap-4">
-                <a href="sitenotes.html" class="text-sm transition-colors">Site Notes</a>
+                <a href="sitenotes.html" aria-label="Site Notes" class="text-sm transition-colors">Site Notes</a>
                 <p class="text-sm">&copy; 2025–2026 Frank Brockmann</p>
             </div>
         </div>

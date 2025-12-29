@@ -278,8 +278,8 @@
             </a>
             <!-- Mobile hamburger button -->
             <button class="md:hidden text-white hover:text-gold-500 transition-colors" id="mobile-menu-toggle" aria-label="Toggle menu" aria-expanded="false">
-                <i data-lucide="menu" class="w-6 h-6" id="menu-icon"></i>
-                <i data-lucide="x" class="w-6 h-6 hidden" id="close-icon"></i>
+                <i data-lucide="menu" class="w-6 h-6" id="menu-icon" aria-hidden="true"></i>
+                <i data-lucide="x" class="w-6 h-6 hidden" id="close-icon" aria-hidden="true"></i>
             </button>
             <!-- Desktop nav -->
             <div class="hidden md:flex gap-6">
@@ -305,7 +305,7 @@
         <div class="max-w-4xl mx-auto px-6">
             <div class="flex items-center gap-2 text-sm font-mono">
                 <a href="index.html" class="text-navy-900 hover:text-navy-800 transition-colors">Portfolio</a>
-                <i data-lucide="chevron-right" class="w-4 h-4 text-slate-400"></i>
+                <i data-lucide="chevron-right" class="w-4 h-4 text-slate-400" aria-hidden="true"></i>
                 <span class="text-slate-700">KĀʻEO</span>
             </div>
         </div>
@@ -321,7 +321,7 @@
                     <p class="text-lg text-slate-700 mb-1 font-semibold">AI Lab and Computational Infrastructure for Hawaiian-Medium Assessment</p>
                     <p class="text-sm text-slate-700 mb-4 font-medium">Program Tech Consultant & AI Lab Co-Designer · 2016–Present</p>
                     <p class="text-base text-slate-700 leading-relaxed mb-4">
-                        <a href="https://hawaiipublicschools.org/academics/types-of-testing/?highlight=K%C4%80%CA%BBEO" target="_blank" rel="noopener" class="text-navy-800 hover:text-navy-900 underline">KĀʻEO</a> is the only Hawaiian-medium assessment system in the world, serving approximately 3,000 students as part of the <a href="https://hawaiipublicschools.org/enrolling-in-school/hawaiian-immersion-school/" target="_blank" rel="noopener" class="text-navy-800 hover:text-navy-900 underline">Hawaiian Language Immersion program</a>. It is also the only Indigenous language assessment to undergo federal peer review. Since 2016, I've worked with researchers and program leads to build computational infrastructure for the program.
+                        <a href="https://hawaiipublicschools.org/academics/types-of-testing/?highlight=K%C4%80%CA%BBEO" target="_blank" rel="noopener" class="text-navy-800 hover:text-navy-900 underline" aria-label="KĀʻEO on Hawaii Public Schools (opens in new tab)">KĀʻEO</a> is the only Hawaiian-medium assessment system in the world, serving approximately 3,000 students as part of the <a href="https://hawaiipublicschools.org/enrolling-in-school/hawaiian-immersion-school/" target="_blank" rel="noopener" class="text-navy-800 hover:text-navy-900 underline" aria-label="Hawaiian Language Immersion program (opens in new tab)">Hawaiian Language Immersion program</a>. It is also the only Indigenous language assessment to undergo federal peer review. Since 2016, I've worked with researchers and program leads to build computational infrastructure for the program.
                     </p>
                     <p class="text-base text-slate-700 leading-relaxed">
                         In 2025, I co-designed an <span class="font-extrabold">AI Lab</span> that bridges psychometric analysis and Hawaiian cultural and language expertise, while keeping Hawaiian content under community control.
@@ -340,25 +340,25 @@
                 <p>I designed the AI Lab architecture and collaborated with Hawaiian Language and cultural experts as part of a three-phase workflow. The project started with the development of governance frameworks, and I conducted all prompt engineering, system documentation, and design tasks for a RAG framework on top of two flagship LLM tools (NotebookLM and Claude).</p>
                 <div class="collaborators">
                   <span class="collab-label">Collaborators</span>
-                  <p>Pōhai Kūkea-Shultz provided Hawaiian linguistic and cultural authority and serves as lead author on the research paper. The psychometric analyses that served as inputs to the AI Lab were provided by Kerry Englert of <a href="https://senecaconsulting.org/index.html" target="_blank" rel="noopener" class="text-navy-800 hover:text-navy-900 underline transition-colors">Seneca Consulting</a>.</p>
+                  <p>Pōhai Kūkea-Shultz provided Hawaiian linguistic and cultural authority and serves as lead author on the research paper. The psychometric analyses that served as inputs to the AI Lab were provided by Kerry Englert of <a href="https://senecaconsulting.org/index.html" target="_blank" rel="noopener" class="text-navy-800 hover:text-navy-900 underline transition-colors" aria-label="Seneca Consulting (opens in new tab)">Seneca Consulting</a>.</p>
                 </div>
               </div>
               <div class="card">
                 <p class="card-label">Materials</p>
                 <div class="mb-4">
                   <span class="collab-label">Research Publication</span>
-                  <p style="margin-top: 0.5rem;">Kūkea-Shultz, P. & Brockmann, F. (2025). <em>Bridging Psychometric and Content Development Practices with AI.</em> arXiv:2512.17140. <a href="https://arxiv.org/abs/2512.17140" class="text-navy-800 hover:text-navy-900 underline transition-colors" target="_blank" rel="noopener">View Publication (arXiv)</a></p>
+                  <p style="margin-top: 0.5rem;">Kūkea-Shultz, P. & Brockmann, F. (2025). <em>Bridging Psychometric and Content Development Practices with AI.</em> arXiv:2512.17140. <a href="https://arxiv.org/abs/2512.17140" class="text-navy-800 hover:text-navy-900 underline transition-colors" target="_blank" rel="noopener" aria-label="View Publication on arXiv (opens in new tab)">View Publication (arXiv)</a></p>
                 </div>
                 <div>
                   <span class="collab-label">AI Lab Reference Materials</span>
                   <ul class="space-y-2 mt-2" style="font-size: 0.9rem; color: #4a5568;">
-                    <li><a href="assets/AI_Lab KAEO AI Policy v4.0.pdf" class="text-navy-800 hover:text-navy-900 underline transition-colors inline-flex items-center gap-1" target="_blank" rel="noopener"><i data-lucide="file-text" class="w-4 h-4"></i> AI Lab Principles & Policy Framework</a>
+                    <li><a href="assets/AI_Lab KAEO AI Policy v4.0.pdf" class="text-navy-800 hover:text-navy-900 underline transition-colors inline-flex items-center gap-1" target="_blank" rel="noopener" aria-label="AI Lab Principles & Policy Framework (PDF, opens in new tab)"><i data-lucide="file-text" class="w-4 h-4" aria-hidden="true"></i> AI Lab Principles & Policy Framework</a>
                       <span class="text-slate-600 text-sm ml-1">(PDF, 104KB)</span></li>
-                    <li><a href="assets/AI_Lab.1 Project Instructions.pdf" class="text-navy-800 hover:text-navy-900 underline transition-colors inline-flex items-center gap-1" target="_blank" rel="noopener"><i data-lucide="file-text" class="w-4 h-4"></i> AI Lab Project Instructions</a>
+                    <li><a href="assets/AI_Lab.1 Project Instructions.pdf" class="text-navy-800 hover:text-navy-900 underline transition-colors inline-flex items-center gap-1" target="_blank" rel="noopener" aria-label="AI Lab Project Instructions (PDF, opens in new tab)"><i data-lucide="file-text" class="w-4 h-4" aria-hidden="true"></i> AI Lab Project Instructions</a>
                       <span class="text-slate-600 text-sm ml-1">(PDF, 162KB)</span></li>
-                    <li><a href="assets/AI_Lab.2 Frameworks for Reviewing KĀʻEO Items.pdf" class="text-navy-800 hover:text-navy-900 underline transition-colors inline-flex items-center gap-1" target="_blank" rel="noopener"><i data-lucide="file-text" class="w-4 h-4"></i> AI Lab Frameworks for Reviewing KĀʻEO Items</a>
+                    <li><a href="assets/AI_Lab.2 Frameworks for Reviewing KĀʻEO Items.pdf" class="text-navy-800 hover:text-navy-900 underline transition-colors inline-flex items-center gap-1" target="_blank" rel="noopener" aria-label="AI Lab Frameworks for Reviewing KĀʻEO Items (PDF, opens in new tab)"><i data-lucide="file-text" class="w-4 h-4" aria-hidden="true"></i> AI Lab Frameworks for Reviewing KĀʻEO Items</a>
                       <span class="text-slate-600 text-sm ml-1">(PDF, 145KB)</span></li>
-                    <li><a href="assets/AI_Lab.3 Guidelines for Developer-Focused Interpretive Briefs.pdf" class="text-navy-800 hover:text-navy-900 underline transition-colors inline-flex items-center gap-1" target="_blank" rel="noopener"><i data-lucide="file-text" class="w-4 h-4"></i> AI Lab Guidelines for Interpretive Briefs</a>
+                    <li><a href="assets/AI_Lab.3 Guidelines for Developer-Focused Interpretive Briefs.pdf" class="text-navy-800 hover:text-navy-900 underline transition-colors inline-flex items-center gap-1" target="_blank" rel="noopener" aria-label="AI Lab Guidelines for Interpretive Briefs (PDF, opens in new tab)"><i data-lucide="file-text" class="w-4 h-4" aria-hidden="true"></i> AI Lab Guidelines for Interpretive Briefs</a>
                       <span class="text-slate-600 text-sm ml-1">(PDF, 158KB)</span></li>
                   </ul>
                 </div>
@@ -427,7 +427,7 @@
               <div class="card">
                 <p class="card-label card-label-gold">Hawaiian Font Analyzer</p>
                 <p>Backend engine that scans Google Fonts to identify which fonts correctly render Hawaiian diacritical marks. Uses automated visual analysis to evaluate ʻokina and kahakō support. <em>(In development)</em></p>
-                <p><a href="https://github.com/frankbydesign/hawaiian-font-catalog-backend" target="_blank" rel="noopener" class="text-navy-800 hover:text-navy-900 underline transition-colors inline-flex items-center gap-1"><i data-lucide="github" class="w-4 h-4"></i> View Repository (GitHub)</a></p>
+                <p><a href="https://github.com/frankbydesign/hawaiian-font-catalog-backend" target="_blank" rel="noopener" class="text-navy-800 hover:text-navy-900 underline transition-colors inline-flex items-center gap-1" aria-label="View Hawaiian Font Analyzer Repository on GitHub (opens in new tab)"><i data-lucide="github" class="w-4 h-4" aria-hidden="true"></i> View Repository (GitHub)</a></p>
               </div>
 
               <!-- Hawaiian Input Library -->
@@ -435,9 +435,9 @@
                 <p class="card-label card-label-gold">Hawaiian Input Library</p>
                 <p>JavaScript library enabling Hawaiian character input (ā, ē, ī, ō, ū, ʻ) in any browser—no extensions required. Drop-in integration for web developers.</p>
                 <p>
-                  <a href="https://frankbydesign.github.io/hawaiian-input/" target="_blank" rel="noopener" class="text-navy-800 hover:text-navy-900 underline transition-colors inline-flex items-center gap-1"><i data-lucide="play-circle" class="w-4 h-4"></i> View Demo</a>
+                  <a href="https://frankbydesign.github.io/hawaiian-input/" target="_blank" rel="noopener" class="text-navy-800 hover:text-navy-900 underline transition-colors inline-flex items-center gap-1" aria-label="View Hawaiian Input Library Demo (opens in new tab)"><i data-lucide="play-circle" class="w-4 h-4" aria-hidden="true"></i> View Demo</a>
                   <br>
-                  <a href="https://github.com/frankbydesign/hawaiian-input" target="_blank" rel="noopener" class="text-navy-800 hover:text-navy-900 underline transition-colors inline-flex items-center gap-1"><i data-lucide="github" class="w-4 h-4"></i> View Repository (GitHub)</a>
+                  <a href="https://github.com/frankbydesign/hawaiian-input" target="_blank" rel="noopener" class="text-navy-800 hover:text-navy-900 underline transition-colors inline-flex items-center gap-1" aria-label="View Hawaiian Input Library Repository on GitHub (opens in new tab)"><i data-lucide="github" class="w-4 h-4" aria-hidden="true"></i> View Repository (GitHub)</a>
                 </p>
               </div>
 
@@ -445,7 +445,7 @@
               <div class="card">
                 <p class="card-label card-label-gold">KĀʻEO Program Website</p>
                 <p>Public-facing site I designed and built, originally prototyped in Shorthand and rebuilt as static HTML/CSS/JS.</p>
-                <p><a href="https://kaeo.org" target="_blank" rel="noopener" class="text-navy-800 hover:text-navy-900 underline transition-colors inline-flex items-center gap-1"><i data-lucide="link" class="w-4 h-4"></i> View Site</a></p>
+                <p><a href="https://kaeo.org" target="_blank" rel="noopener" class="text-navy-800 hover:text-navy-900 underline transition-colors inline-flex items-center gap-1" aria-label="View KĀʻEO Program Website (opens in new tab)"><i data-lucide="link" class="w-4 h-4" aria-hidden="true"></i> View Site</a></p>
               </div>
             </div>
         </div>
@@ -455,7 +455,7 @@
     <footer class="site-footer border-t-[3px] border-[#F1B521]">
         <div class="max-w-4xl mx-auto px-6 flex flex-col md:flex-row items-center justify-between gap-4 md:gap-0">
             <a href="https://frankbydesign.github.io/frankbrockmann/index.html#projects" class="inline-flex items-center text-sm transition-colors">
-                <i data-lucide="arrow-left" class="w-4 h-4 mr-2"></i>
+                <i data-lucide="arrow-left" class="w-4 h-4 mr-2" aria-hidden="true"></i>
                 Back to Portfolio
             </a>
             <div class="flex flex-col md:flex-row items-center gap-2 md:gap-4">

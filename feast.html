@@ -229,8 +229,8 @@
             </a>
             <!-- Mobile hamburger button -->
             <button class="md:hidden text-white hover:text-gold-500 transition-colors" id="mobile-menu-toggle" aria-label="Toggle menu" aria-expanded="false">
-                <i data-lucide="menu" class="w-6 h-6" id="menu-icon"></i>
-                <i data-lucide="x" class="w-6 h-6 hidden" id="close-icon"></i>
+                <i data-lucide="menu" class="w-6 h-6" id="menu-icon" aria-hidden="true"></i>
+                <i data-lucide="x" class="w-6 h-6 hidden" id="close-icon" aria-hidden="true"></i>
             </button>
             <!-- Desktop nav -->
             <div class="hidden md:flex gap-6">
@@ -256,7 +256,7 @@
         <div class="max-w-4xl mx-auto px-6">
             <div class="flex items-center gap-2 text-sm font-mono">
                 <a href="index.html" class="text-navy-900 hover:text-navy-800 transition-colors">Portfolio</a>
-                <i data-lucide="chevron-right" class="w-4 h-4 text-slate-400"></i>
+                <i data-lucide="chevron-right" class="w-4 h-4 text-slate-400" aria-hidden="true"></i>
                 <span class="text-slate-700">F.E.A.S.T.</span>
             </div>
         </div>
@@ -272,7 +272,7 @@
                     <p class="text-lg text-slate-700 mb-1 font-semibold">Technology Infrastructure for Caregiver Support</p>
                     <p class="text-sm text-slate-700 mb-4 font-medium">Director of Technology Services · 2020–Present</p>
                     <p class="text-base text-slate-700 leading-relaxed mb-4">
-                        <a href="https://feast-ed.org" target="_blank" rel="noopener" class="text-navy-800 hover:text-navy-900 underline">F.E.A.S.T.</a> supports families navigating eating disorder caregiving and treatment, reaching 12,000+ families each month through its online programs and services. As the only technical staff, I build and maintain the systems that connect families to evidence-based resources and peer support—and in this work, <strong>the way we structure information shapes what actions feel possible for caregivers in crisis</strong>.
+                        <a href="https://feast-ed.org" target="_blank" rel="noopener" class="text-navy-800 hover:text-navy-900 underline" aria-label="F.E.A.S.T. website (opens in new tab)">F.E.A.S.T.</a> supports families navigating eating disorder caregiving and treatment, reaching 12,000+ families each month through its online programs and services. As the only technical staff, I build and maintain the systems that connect families to evidence-based resources and peer support—and in this work, <strong>the way we structure information shapes what actions feel possible for caregivers in crisis</strong>.
                     </p>
                     <p class="text-base text-slate-700 leading-relaxed">
                         As a donation-based nonprofit, improvements are incremental but steady, with ongoing UX testing (heatmaps, usability research) to better serve parents and caregivers in difficult circumstances.
@@ -303,12 +303,12 @@
                     <p class="font-semibold text-slate-700" style="font-weight: 600; margin-bottom: 0.125rem;">Donor Pattern Analyzer (Prototype)</p>
                     <p class="text-slate-600 text-sm" style="margin: 0 0 0.375rem 0;">Interactive visualization tool I built to help nonprofit boards identify hidden patterns in donation data. Demonstrates how interface design can make complex data accessible to non-technical users.</p>
                     <div class="flex flex-wrap gap-3">
-                      <a href="https://frankbydesign.github.io/donation-pattern-analyzer/" target="_blank" rel="noopener" class="inline-flex items-center text-navy-800 hover:text-navy-900 underline transition-colors text-sm">
-                        <i data-lucide="play-circle" class="w-3.5 h-3.5 mr-1.5"></i>
+                      <a href="https://frankbydesign.github.io/donation-pattern-analyzer/" target="_blank" rel="noopener" class="inline-flex items-center text-navy-800 hover:text-navy-900 underline transition-colors text-sm" aria-label="Try the Live Demo of Donor Pattern Analyzer (opens in new tab)">
+                        <i data-lucide="play-circle" class="w-3.5 h-3.5 mr-1.5" aria-hidden="true"></i>
                         Try the Live Demo
                       </a>
-                      <a href="https://github.com/frankbydesign/donation-pattern-analyzer" target="_blank" rel="noopener" class="inline-flex items-center text-navy-800 hover:text-navy-900 underline transition-colors text-sm">
-                        <i data-lucide="github" class="w-3.5 h-3.5 mr-1.5"></i>
+                      <a href="https://github.com/frankbydesign/donation-pattern-analyzer" target="_blank" rel="noopener" class="inline-flex items-center text-navy-800 hover:text-navy-900 underline transition-colors text-sm" aria-label="View Donor Pattern Analyzer Repository on GitHub (opens in new tab)">
+                        <i data-lucide="github" class="w-3.5 h-3.5 mr-1.5" aria-hidden="true"></i>
                         View Repository
                       </a>
                     </div>
@@ -317,8 +317,8 @@
                   <div>
                     <p class="font-semibold text-slate-700" style="font-weight: 600; margin-bottom: 0.125rem;">F.E.A.S.T. AI Policy</p>
                     <p class="text-slate-600 text-sm" style="margin: 0 0 0.375rem 0;">Framework for responsible AI use in eating disorder support contexts.</p>
-                    <a href="https://feast-ed.org/ai-policy/" target="_blank" rel="noopener" class="inline-flex items-center text-navy-800 hover:text-navy-900 underline transition-colors text-sm">
-                      <i data-lucide="file-text" class="w-3.5 h-3.5 mr-1.5"></i>
+                    <a href="https://feast-ed.org/ai-policy/" target="_blank" rel="noopener" class="inline-flex items-center text-navy-800 hover:text-navy-900 underline transition-colors text-sm" aria-label="View F.E.A.S.T. AI Policy (opens in new tab)">
+                      <i data-lucide="file-text" class="w-3.5 h-3.5 mr-1.5" aria-hidden="true"></i>
                       View Document
                     </a>
                   </div>
@@ -326,8 +326,8 @@
                   <div>
                     <p class="font-semibold text-slate-700" style="font-weight: 600; margin-bottom: 0.125rem;">Voice & Tone Guide</p>
                     <p class="text-slate-600 text-sm" style="margin: 0 0 0.375rem 0;">Guidelines for communicating with families in crisis, emphasizing empathy and evidence-based messaging.</p>
-                    <a href="assets/brandguide_feast.pdf" target="_blank" rel="noopener" class="inline-flex items-center text-navy-800 hover:text-navy-900 underline transition-colors text-sm">
-                      <i data-lucide="file-text" class="w-3.5 h-3.5 mr-1.5"></i>
+                    <a href="assets/brandguide_feast.pdf" target="_blank" rel="noopener" class="inline-flex items-center text-navy-800 hover:text-navy-900 underline transition-colors text-sm" aria-label="View Voice & Tone Guide (PDF, opens in new tab)">
+                      <i data-lucide="file-text" class="w-3.5 h-3.5 mr-1.5" aria-hidden="true"></i>
                       View Document
                       <span class="text-slate-600 ml-1">(PDF, 1.3MB)</span>
                     </a>
@@ -337,12 +337,12 @@
                     <p class="font-semibold text-slate-700" style="font-weight: 600; margin-bottom: 0.125rem;">Programs & Services Overview</p>
                     <p class="text-slate-600 text-sm" style="margin: 0 0 0.375rem 0;">One-page guide to F.E.A.S.T.'s offerings for caregivers.</p>
                     <div class="flex flex-wrap gap-3">
-                      <a href="https://feast-ed.org/programs-and-services/" target="_blank" rel="noopener" class="inline-flex items-center text-navy-800 hover:text-navy-900 underline transition-colors text-sm">
-                        <i data-lucide="globe" class="w-3.5 h-3.5 mr-1.5"></i>
+                      <a href="https://feast-ed.org/programs-and-services/" target="_blank" rel="noopener" class="inline-flex items-center text-navy-800 hover:text-navy-900 underline transition-colors text-sm" aria-label="View Programs & Services page (opens in new tab)">
+                        <i data-lucide="globe" class="w-3.5 h-3.5 mr-1.5" aria-hidden="true"></i>
                         View Page
                       </a>
-                      <a href="https://feast-ed.org/wp-content/uploads/2025/11/FEAST-Flyer-2025.pdf" target="_blank" rel="noopener" class="inline-flex items-center text-navy-800 hover:text-navy-900 underline transition-colors text-sm">
-                        <i data-lucide="file-text" class="w-3.5 h-3.5 mr-1.5"></i>
+                      <a href="https://feast-ed.org/wp-content/uploads/2025/11/FEAST-Flyer-2025.pdf" target="_blank" rel="noopener" class="inline-flex items-center text-navy-800 hover:text-navy-900 underline transition-colors text-sm" aria-label="View F.E.A.S.T. Flyer (PDF, opens in new tab)">
+                        <i data-lucide="file-text" class="w-3.5 h-3.5 mr-1.5" aria-hidden="true"></i>
                         View PDF
                       </a>
                     </div>
@@ -361,7 +361,7 @@
 
             <div class="prose prose-slate max-w-none mb-8">
                 <p class="text-slate-700 leading-relaxed mb-4">
-                    F.E.A.S.T.'s clinical team designed a <a href="https://feast-ed.org/feast-30-days/" target="_blank" rel="noopener" class="text-navy-800 hover:text-navy-900 underline">30-day curriculum</a> that scaffolds caregivers through early crisis, sequencing information based on what parents can absorb at each stage. My role was building and maintaining the delivery infrastructure (first in Mailchimp, then rebuilt in Salesforce with parallel static web/PDF versions). I made the technical decisions: timing, flow logic, segmentation, engagement tracking for both English and Spanish versions of the program.
+                    F.E.A.S.T.'s clinical team designed a <a href="https://feast-ed.org/feast-30-days/" target="_blank" rel="noopener" class="text-navy-800 hover:text-navy-900 underline" aria-label="FEAST 30 Days curriculum page (opens in new tab)">30-day curriculum</a> that scaffolds caregivers through early crisis, sequencing information based on what parents can absorb at each stage. My role was building and maintaining the delivery infrastructure (first in Mailchimp, then rebuilt in Salesforce with parallel static web/PDF versions). I made the technical decisions: timing, flow logic, segmentation, engagement tracking for both English and Spanish versions of the program.
                 </p>
                 <p class="text-slate-700 leading-relaxed">
                     Building this system gave me direct insight into how timed information delivery shapes the user experience for community members in crisis. It's computational scaffolding that predates the AI systems I want to study.
@@ -450,15 +450,15 @@
 
             <!-- Links -->
             <div class="flex flex-wrap gap-4">
-                <a href="https://info.feast-ed.org/l/1069002/2024-07-16/3mbf2s" target="_blank" rel="noopener" class="inline-flex items-center px-4 py-2 rounded transition-colors no-underline" style="background: #003C6C; color: #ffffff; text-decoration: none;" onmouseover="this.style.background='#F1B521'; this.style.color='#003C6C'" onmouseout="this.style.background='#003C6C'; this.style.color='#ffffff'">
-                    <i data-lucide="list" class="w-4 h-4 mr-2"></i>
+                <a href="https://info.feast-ed.org/l/1069002/2024-07-16/3mbf2s" target="_blank" rel="noopener" class="inline-flex items-center px-4 py-2 rounded transition-colors no-underline" style="background: #003C6C; color: #ffffff; text-decoration: none;" onmouseover="this.style.background='#F1B521'; this.style.color='#003C6C'" onmouseout="this.style.background='#003C6C'; this.style.color='#ffffff'" aria-label="View All 30 Days in English (opens in new tab)">
+                    <i data-lucide="list" class="w-4 h-4 mr-2" aria-hidden="true"></i>
                     All 30 Days (English)
-                    <i data-lucide="external-link" class="w-3.5 h-3.5 ml-2"></i>
+                    <i data-lucide="external-link" class="w-3.5 h-3.5 ml-2" aria-hidden="true"></i>
                 </a>
-                <a href="https://info.feast-ed.org/FEAST30DayMenuSpanish" target="_blank" rel="noopener" class="inline-flex items-center px-4 py-2 rounded transition-colors no-underline" style="background: #ffffff; color: #003C6C; text-decoration: none; border: 2px solid #003C6C;" onmouseover="this.style.background='#F1B521'; this.style.borderColor='#F1B521'" onmouseout="this.style.background='#ffffff'; this.style.borderColor='#003C6C'">
-                    <i data-lucide="list" class="w-4 h-4 mr-2"></i>
+                <a href="https://info.feast-ed.org/FEAST30DayMenuSpanish" target="_blank" rel="noopener" class="inline-flex items-center px-4 py-2 rounded transition-colors no-underline" style="background: #ffffff; color: #003C6C; text-decoration: none; border: 2px solid #003C6C;" onmouseover="this.style.background='#F1B521'; this.style.borderColor='#F1B521'" onmouseout="this.style.background='#ffffff'; this.style.borderColor='#003C6C'" aria-label="View All 30 Days in Spanish (opens in new tab)">
+                    <i data-lucide="list" class="w-4 h-4 mr-2" aria-hidden="true"></i>
                     All 30 Days (Spanish)
-                    <i data-lucide="external-link" class="w-3.5 h-3.5 ml-2"></i>
+                    <i data-lucide="external-link" class="w-3.5 h-3.5 ml-2" aria-hidden="true"></i>
                 </a>
             </div>
 
@@ -473,7 +473,7 @@
     <footer class="site-footer border-t-[3px] border-[#F1B521]">
         <div class="max-w-4xl mx-auto px-6 flex flex-col md:flex-row items-center justify-between gap-4 md:gap-0">
             <a href="https://frankbydesign.github.io/frankbrockmann/index.html#projects" class="inline-flex items-center text-sm transition-colors">
-                <i data-lucide="arrow-left" class="w-4 h-4 mr-2"></i>
+                <i data-lucide="arrow-left" class="w-4 h-4 mr-2" aria-hidden="true"></i>
                 Back to Portfolio
             </a>
             <div class="flex flex-col md:flex-row items-center gap-2 md:gap-4">
